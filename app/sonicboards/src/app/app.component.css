@@ -1,0 +1,95 @@
+body {
+    color: #fff;
+    background-color: #222;
+    font-family: 'Karla', sans-serif;
+    height: 100vh
+}
+
+.dropdown-item:hover {
+    background-color: #485059;
+}
+
+.album-display { position:relative; display: inline-block; overflow:hidden; }
+
+/* Remove arrow from dropdown for angular bootstrap */
+.dropdown-toggle::after { display:none; }
+
+.region-button {
+    cursor: pointer;
+    color: white;
+    background-color: #222;
+    padding: .25rem .5rem;
+    font-size: .875rem;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: none;
+    outline: 0;
+    border-right: 1px solid #343a40;
+    transition: color .15s ease-in-out,
+        background-color .15s ease-in-out,
+        border-color .15s ease-in-out,
+        box-shadow .15s ease-in-out;
+}
+
+.region-button:hover, .rb-active {
+    background-color: #b35536;
+    outline: 0;
+}
+
+.genre-badge { position:absolute; top:1px; right:1px; }
+.badge-pill { background-color: #faebd7; color: black; }
+.search-badge:hover, .sb-active { background-color: #b35536; cursor: pointer; }
+
+/****************************** GENRE COLORS **********************************/
+
+.genre-rock{ background-color:#DC143C; color:white}
+.genre-country{ background-color:#A52A2A; color:white}
+.genre-alternative{ background-color:#D2691E; color:black}
+.genre-funk{ background-color:#FA8072; color:black}
+.genre-rbsoul{ background-color:#FFA500; color:black}
+.genre-folk{ background-color:#DAA520; color:black}
+.genre-acoustic{ background-color:#FFFF00; color:black}
+.genre-soundtrack{ background-color:#BDB76B; color:black}
+.genre-devotional{ background-color:#00ff7f; color:black}
+.genre-experimental{ background-color:#90EE90; color:black}
+.genre-reggae{ background-color:#008000; color:white}
+.genre-electronic{ background-color:#C0C0C0; color:black}
+.genre-jazz{ background-color:#FFC0CB; color:black}
+.genre-punk{ background-color:#FF0080; color:white}
+.genre-world{ background-color:#9932cc; color:white}
+.genre-hiphop{ background-color:#0000A0; color:white}
+.genre-blues{ background-color:#00bfff; color:black}
+.genre-pop{ background-color:#87CEEB; color:black}
+
+
+/************************** RESPONSIVE WEB DESIGN *****************************/
+
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
+    .genre-badge {
+        font-size:0.45rem;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (min-width: 600px) {
+    .genre-badge {
+        font-size:0.65rem;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+    .genre-badge {
+        font-size:0.7rem;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+    .genre-badge {
+        font-size:0.85rem;
+    }
+}

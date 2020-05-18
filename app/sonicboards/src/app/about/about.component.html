@@ -1,0 +1,39 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#" 
+        style="font-family: 'Roboto Slab', serif;">SONICBOARDS</a>
+    <button class="navbar-toggler" type="button"
+            (click)="toggleNavbar()">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" [ngClass]="{ 'show': navbarOpen }">
+        <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="/canada">Canada</a></li>
+        <li class="nav-item active"><a class="nav-link" href="/about">About</a></li>
+        </ul>
+        <span class="navbar-text">Updated on {{ date_stamp_str }}</span>
+    </div>
+</nav>
+
+<main class="container-fluid col-sm-offset-2 col-sm-8 pl-0 pr-0" 
+    style="color: #fff; text-align: center;">
+<h1 class="pt-5" style="letter-spacing: -0.05em; 
+    font-size:3.5rem; font-family: 'Karla', sans-serif;">About SonicBoards</h1>
+<p style="font-size:1.5rem; letter-spacing: +0.05em; font-weight:100">
+    SonicBoards is a web application that makes it easier to navigate the 
+    overwhelming number of music sources on the web. The primary
+    sources are Bandcamp, Pitchfork, and AllMusic.</p>
+
+<h2 class="pt-4" style="font-size:2.2rem; font-family: 'Karla', sans-serif;">
+    How does it work?</h2>
+<p style="font-size:1.5rem; letter-spacing: +0.05em; font-weight:100">
+    I have set web-crawlers to search each website every week: 
+    <a href="https://github.com/jpnaterer/sonicboards">Code available here</a>.</p>
+
+<h2 class="pt-4" style="font-size:2.2rem; font-family: 'Karla', sans-serif;">
+    How do I make a suggestion?</h2>
+<p style="font-size:1.5rem; letter-spacing: +0.05em; font-weight:100">
+    Send me a Direct Message on 
+    <a href="https://twitter.com/BuddyThePuffin5">Twitter</a>!</p>
+
+</main>

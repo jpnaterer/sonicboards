@@ -1,0 +1,6 @@
+# frontend/backend
+**/dist
+**/node_modules
+
+# python
+scripts/__pycache__

@@ -1,0 +1,424 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#" 
+        style="font-family: 'Roboto Slab', serif;">SONICBOARDS</a>
+    <button class="navbar-toggler" type="button"
+            (click)="toggleNavbar()">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" [ngClass]="{ 'show': navbarOpen }">
+        <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+        <li class="nav-item active"><a class="nav-link" href="/canada">Canada</a></li>
+        <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+        </ul>
+        <span class="navbar-text">Updated on {{ date_stamp_str }}</span>
+    </div>
+</nav>
+
+<main class="container-fluid pl-0 pr-0">
+
+<div class="row ml-3 mr-3 mt-3">
+<div class="col-lg-8 col-xl-8 mb-3">
+<div class="card bg-dark">
+<div class="card-header pl-1 mt-1" style="padding: 0; font-size: 0">
+    <button (click)="onCatClick($event)" type="button" 
+        [ngClass]="{'rb-active': current_tab === 'toronto'}"
+        class="region-button" id="rb-to">Toronto</button>
+    <button (click)="onCatClick($event)" type="button" 
+        [ngClass]="{'rb-active': current_tab === 'montreal'}"
+        class="region-button" id="rb-mo">Montreal</button>
+    <button (click)="onCatClick($event)" type="button" 
+        [ngClass]="{'rb-active': current_tab === 'bc'}"
+        class="region-button" id="rb-bc">British Columbia</button>
+    <button (click)="onCatClick($event)" type="button" 
+        [ngClass]="{'rb-active': current_tab === 'prairies'}"
+        class="region-button" id="rb-pr">Prairies</button>
+    <button (click)="onCatClick($event)" type="button" 
+        [ngClass]="{'rb-active': current_tab === 'Ontario'}"
+        class="region-button" id="rb-on">Ontario</button>
+    <button (click)="onCatClick($event)" type="button" 
+        [ngClass]="{'rb-active': current_tab === 'quebec'}"
+        class="region-button" id="rb-qu">Quebec</button>
+    <button (click)="onCatClick($event)" type="button" 
+        [ngClass]="{'rb-active': current_tab === 'atlantic'}"
+        class="region-button" id="rb-at">Atlantic</button>
+    <button (click)="onCatClick($event)" type="button" 
+        [ngClass]="{'rb-active': current_tab === 'custom'}"
+        class="region-button" id="rb-cs">Custom</button>
+    <div ngbDropdown class="dropdown float-right mt-1 mr-1" 
+        style="font-size: 1rem; color:#fff;" placement="bottom-right">
+        <a ngbDropdownToggle>
+        <svg class="bi bi-three-dots-vertical" width="1em" height="1em" 
+            viewBox="0 0 16 16" fill="currentColor" 
+            xmlns="http://www.w3.org/2000/svg" style="cursor: pointer">
+            <path fill-rule="evenodd" d="M9.5 13a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm0-5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm0-5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" clip-rule="evenodd"/>
+        </svg></a>
+        <div ngbDropdownMenu class="dropdown-menu dropleft" 
+        style="background-color:#3e454d; color:#fff;">
+            <button ngbDropdownItem  (click)="onGenClick($event)" class="toggle-genre" 
+            style="cursor: pointer; color:#fff;">Show Genres</button>
+        </div>
+    </div>
+</div>
+
+<div class="card-body" style="font-size:0; text-align: center;">
+<!---------------------------- TORONTO -------------------------------->
+<div [hidden]="current_tab != 'toronto'">
+<div *ngFor=" let obj of toronto_data; let i = index" 
+    class="container album-display pl-0 pr-0"
+    [ngStyle]="{'width': i < 5 ? '18.8%' : (i < 11 ? '15.66%' : '13.43%') }">
+    <a href="{{ obj.url }}" target="_blank">
+        <img src="{{ obj.sp_img }}" width="100%"></a>
+    <div class="genre-badge" *ngIf="genre_flag" [@genreToggle]>
+    <span class="badge badge-pill genre-{{ obj.genre }}">{{ obj.genre }}</span>
+    </div>
+</div>
+</div>
+
+<!---------------------------- MONTREAL -------------------------------->
+<div [hidden]="current_tab != 'montreal'">
+<div *ngFor="let obj of montreal_data; let i = index" 
+    class="container album-display pl-0 pr-0"
+    [ngStyle]="{'width': i < 5 ? '18.8%' : 
+    (i < 11 ? '15.66%' : '13.43%') }">
+    <a href="{{ obj.url }}" target="_blank">
+        <img src="{{ obj.sp_img }}" width="100%"></a>
+    <div class="genre-badge" *ngIf="genre_flag" [@genreToggle]>
+    <span class="badge badge-pill genre-{{ obj.genre }}">{{ obj.genre }}</span>
+    </div>
+</div>
+</div>
+
+<!---------------------------- BC -------------------------------->
+<div [hidden]="current_tab != 'bc'">
+<div *ngFor="let obj of bc_data; let i = index" 
+    class="container album-display pl-0 pr-0"
+    [ngStyle]="{'width': i < 5 ? '18.8%' : 
+    (i < 11 ? '15.66%' : '13.43%') }">
+    <a href="{{ obj.url }}" target="_blank">
+        <img src="{{ obj.sp_img }}" width="100%"></a>
+    <div class="genre-badge" *ngIf="genre_flag" [@genreToggle]>
+    <span class="badge badge-pill genre-{{ obj.genre }}">{{ obj.genre }}</span>
+    </div>
+</div>
+</div>
+
+<!---------------------------- PRAIRIES -------------------------------->
+<div [hidden]="current_tab != 'prairies'">
+<div *ngFor="let obj of prairies_data; let i = index" 
+    class="container album-display pl-0 pr-0"
+    [ngStyle]="{'width': i < 5 ? '18.8%' : 
+    (i < 11 ? '15.66%' : '13.43%') }">
+    <a href="{{ obj.url }}" target="_blank">
+        <img src="{{ obj.sp_img }}" width="100%"></a>
+    <div class="genre-badge" *ngIf="genre_flag" [@genreToggle]>
+    <span class="badge badge-pill genre-{{ obj.genre }}">{{ obj.genre }}</span>
+    </div>
+</div>
+</div>
+
+<!---------------------------- ONTARIO -------------------------------->
+<div [hidden]="current_tab != 'ontario'">
+<div *ngFor="let obj of ontario_data; let i = index" 
+    class="container album-display pl-0 pr-0"
+    [ngStyle]="{'width': i < 5 ? '18.8%' : 
+    (i < 11 ? '15.66%' : '13.43%') }">
+    <a href="{{ obj.url }}" target="_blank">
+        <img src="{{ obj.sp_img }}" width="100%"></a>
+    <div class="genre-badge" *ngIf="genre_flag" [@genreToggle]>
+    <span class="badge badge-pill genre-{{ obj.genre }}">{{ obj.genre }}</span>
+    </div>
+</div>
+</div>
+
+<!---------------------------- QUEBEC -------------------------------->
+<div [hidden]="current_tab != 'quebec'">
+<div *ngFor="let obj of quebec_data; let i = index" 
+    class="container album-display pl-0 pr-0"
+    [ngStyle]="{'width': i < 5 ? '18.8%' : 
+    (i < 11 ? '15.66%' : '13.43%') }">
+    <a href="{{ obj.url }}" target="_blank">
+        <img src="{{ obj.sp_img }}" width="100%"></a>
+    <div class="genre-badge" *ngIf="genre_flag" [@genreToggle]>
+    <span class="badge badge-pill genre-{{ obj.genre }}">{{ obj.genre }}</span>
+    </div>
+</div>
+</div>
+
+<!---------------------------- ATLANTIC -------------------------------->
+<div [hidden]="current_tab != 'atlantic'">
+<div *ngFor="let obj of atlantic_data; let i = index" 
+    class="container album-display pl-0 pr-0"
+    [ngStyle]="{'width': i < 5 ? '18.8%' : 
+    (i < 11 ? '15.66%' : '13.43%') }">
+    <a href="{{ obj.url }}" target="_blank">
+        <img src="{{ obj.sp_img }}" width="100%"></a>
+    <div class="genre-badge" *ngIf="genre_flag" [@genreToggle]>
+    <span class="badge badge-pill genre-{{ obj.genre }}">{{ obj.genre }}</span>
+    </div>
+</div>
+</div>
+
+<!---------------------------- CUSTOM -------------------------------->
+<div *ngIf="current_tab === 'custom'">
+<div *ngFor="let obj of custom_data; let i = index" 
+    class="container album-display pl-0 pr-0"
+    [ngStyle]="{'width': i < 5 ? '18.8%' : 
+    (i < 11 ? '15.66%' : '13.43%') }">
+    <a href="{{ obj.url }}" target="_blank">
+        <img src="{{ obj.sp_img }}" width="100%"></a>
+    <div class="genre-badge" *ngIf="genre_flag" [@genreToggle]>
+    <span class="badge badge-pill genre-{{ obj.genre }}">{{ obj.genre }}</span>
+    </div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+<!----------------------------------------------------------------------->
+<!----------------------------------------------------------------------->
+<!---------------------------- TOP RELEASES ----------------------------->
+<!----------------------------------------------------------------------->
+<!----------------------------------------------------------------------->
+
+<div class="col-lg-4 col-xl-4">
+<div class="card bg-dark">
+<div class="card-body">
+<table 
+    class="table table-sm mb-0" style="color: #fff">
+<thead>
+<tr>
+    <th>Release</th>
+    <th data-toggle="tooltip" title="Spotify Popularity (/100)">
+        <img class="align-bottom" style="height:30px" 
+            src="assets/icon_spotify.svg">
+    </th>
+    <th data-toggle="tooltip" title="Treble Chef's Score (/100)">
+        <!-- Retrieved from flaticon -->
+        <img class="align-bottom" style="height:30px" 
+            src="assets/icon_chef.svg">
+    </th>
+</tr>
+</thead>
+
+<!---------------------------- TORONTO ----------------------------->
+<tbody *ngIf="current_tab === 'toronto'">
+<tr *ngFor="let obj of toronto_data.slice(0, 5); let i = index; ">
+    <td>
+    <span style="font-size:1.1rem">
+    <a href="https://open.spotify.com/artist/{{ obj.sp_artist_id }}" 
+        target="_blank" style="color: #ffffff;">{{ obj.artist }}</a></span>
+    <br/>
+    <span style="color:#dedede; font-size:0.8rem">
+    <a href="https://open.spotify.com/album/{{ obj.sp_album_id }}" 
+        target="_blank" style="color: #ffffff;">{{ obj.title }}</a></span>
+    </td>
+    <td class="align-middle">{{ obj.sp_popularity }}</td>
+    <td class="align-middle">{{ obj.score | number:'1.0-0'}}</td>
+</tr>
+</tbody>
+
+<!---------------------------- MONTREAL  ----------------------------->
+<tbody *ngIf="current_tab === 'montreal'">
+<tr *ngFor="let obj of montreal_data.slice(0, 5); let i = index; ">
+    <td>
+    <span style="font-size:1.1rem">
+    <a href="https://open.spotify.com/artist/{{ obj.sp_artist_id }}" 
+        target="_blank" style="color: #ffffff;">{{ obj.artist }}</a></span>
+    <br/>
+    <span style="color:#dedede; font-size:0.8rem">
+    <a href="https://open.spotify.com/album/{{ obj.sp_album_id }}" 
+        target="_blank" style="color: #ffffff;">{{ obj.title }}</a></span>
+    </td>
+    <td class="align-middle">{{ obj.sp_popularity }}</td>
+    <td class="align-middle">{{ obj.score | number:'1.0-0'}}</td>
+</tr>
+</tbody>
+
+<!---------------------------- BC  ----------------------------->
+<tbody *ngIf="current_tab === 'bc'">
+<tr *ngFor="let obj of bc_data.slice(0, 5); let i = index; ">
+    <td>
+    <span style="font-size:1.1rem">
+    <a href="https://open.spotify.com/artist/{{ obj.sp_artist_id }}" 
+        target="_blank" style="color: #ffffff;">{{ obj.artist }}</a></span>
+    <br/>
+    <span style="color:#dedede; font-size:0.8rem">
+    <a href="https://open.spotify.com/album/{{ obj.sp_album_id }}" 
+        target="_blank" style="color: #ffffff;">{{ obj.title }}</a></span>
+    </td>
+    <td class="align-middle">{{ obj.sp_popularity }}</td>
+    <td class="align-middle">{{ obj.score | number:'1.0-0'}}</td>
+</tr>
+</tbody>
+
+    <!---------------------------- PRAIRIES  ----------------------------->
+<tbody *ngIf="current_tab === 'prairies'">
+    <tr *ngFor="let obj of prairies_data.slice(0, 5); let i = index; ">
+        <td>
+        <span style="font-size:1.1rem">
+        <a href="https://open.spotify.com/artist/{{ obj.sp_artist_id }}" 
+            target="_blank" style="color: #ffffff;">{{ obj.artist }}</a></span>
+        <br/>
+        <span style="color:#dedede; font-size:0.8rem">
+        <a href="https://open.spotify.com/album/{{ obj.sp_album_id }}" 
+            target="_blank" style="color: #ffffff;">{{ obj.title }}</a></span>
+        </td>
+        <td class="align-middle">{{ obj.sp_popularity }}</td>
+        <td class="align-middle">{{ obj.score | number:'1.0-0'}}</td>
+    </tr>
+    </tbody>
+
+<!---------------------------- ONTARIO  ----------------------------->
+<tbody *ngIf="current_tab === 'ontario'">
+<tr *ngFor="let obj of ontario_data.slice(0, 5); let i = index; ">
+    <td>
+    <span style="font-size:1.1rem">
+    <a href="https://open.spotify.com/artist/{{ obj.sp_artist_id }}" 
+        target="_blank" style="color: #ffffff;">{{ obj.artist }}</a></span>
+    <br/>
+    <span style="color:#dedede; font-size:0.8rem">
+    <a href="https://open.spotify.com/album/{{ obj.sp_album_id }}" 
+        target="_blank" style="color: #ffffff;">{{ obj.title }}</a></span>
+    </td>
+    <td class="align-middle">{{ obj.sp_popularity }}</td>
+    <td class="align-middle">{{ obj.score | number:'1.0-0'}}</td>
+</tr>
+</tbody>
+
+<!---------------------------- QUEBEC  ----------------------------->
+<tbody *ngIf="current_tab === 'quebec'">
+<tr *ngFor="let obj of quebec_data.slice(0, 5); let i = index; ">
+    <td>
+    <span style="font-size:1.1rem">
+    <a href="https://open.spotify.com/artist/{{ obj.sp_artist_id }}" 
+        target="_blank" style="color: #ffffff;">{{ obj.artist }}</a></span>
+    <br/>
+    <span style="color:#dedede; font-size:0.8rem">
+    <a href="https://open.spotify.com/album/{{ obj.sp_album_id }}" 
+        target="_blank" style="color: #ffffff;">{{ obj.title }}</a></span>
+    </td>
+    <td class="align-middle">{{ obj.sp_popularity }}</td>
+    <td class="align-middle">{{ obj.score | number:'1.0-0'}}</td>
+</tr>
+</tbody>
+
+<!---------------------------- ATLANTIC  ----------------------------->
+<tbody *ngIf="current_tab === 'atlantic'">
+<tr *ngFor="let obj of atlantic_data.slice(0, 5); let i = index; ">
+    <td>
+    <span style="font-size:1.1rem">
+    <a href="https://open.spotify.com/artist/{{ obj.sp_artist_id }}" 
+        target="_blank" style="color: #ffffff;">{{ obj.artist }}</a></span>
+    <br/>
+    <span style="color:#dedede; font-size:0.8rem">
+    <a href="https://open.spotify.com/album/{{ obj.sp_album_id }}" 
+        target="_blank" style="color: #ffffff;">{{ obj.title }}</a></span>
+    </td>
+    <td class="align-middle">{{ obj.sp_popularity }}</td>
+    <td class="align-middle">{{ obj.score | number:'1.0-0'}}</td>
+</tr>
+</tbody>
+
+<!---------------------------- CUSTOM  ----------------------------->
+<tbody *ngIf="current_tab === 'custom'">
+<tr *ngFor="let obj of custom_data.slice(0, 5); let i = index; ">
+    <td>
+    <span style="font-size:1.1rem">
+    <a href="https://open.spotify.com/artist/{{ obj.sp_artist_id }}" 
+        target="_blank" style="color: #ffffff;">{{ obj.artist }}</a></span>
+    <br/>
+    <span style="color:#dedede; font-size:0.8rem">
+    <a href="https://open.spotify.com/album/{{ obj.sp_album_id }}" 
+        target="_blank" style="color: #ffffff;">{{ obj.title }}</a></span>
+    </td>
+    <td class="align-middle">{{ obj.sp_popularity }}</td>
+    <td class="align-middle">{{ obj.score | number:'1.0-0'}}</td>
+</tr>
+</tbody>
+
+</table>
+
+<!---------------------------- CUSTOM  ----------------------------->
+<div class="mt-2" *ngIf="current_tab === 'custom'" style="color: #fff">
+Regions: 
+    <span class="badge badge-pill search-badge" (click)="onSrClick($event)"
+        [ngClass]="{'sb-active': sr_dict['sr-ab']}" id="sr-ab">AB</span>
+    <span class="badge badge-pill search-badge" (click)="onSrClick($event)"
+        [ngClass]="{'sb-active': sr_dict['sr-bc']}" id="sr-bc">BC</span>
+    <span class="badge badge-pill search-badge" (click)="onSrClick($event)"
+        [ngClass]="{'sb-active': sr_dict['sr-mn']}" id="sr-mn">MN</span>
+    <span class="badge badge-pill search-badge" (click)="onSrClick($event)"
+        [ngClass]="{'sb-active': sr_dict['sr-nb']}" id="sr-nb">NB</span>
+    <span class="badge badge-pill search-badge" (click)="onSrClick($event)"
+        [ngClass]="{'sb-active': sr_dict['sr-nl']}" id="sr-nl">NL</span>
+    <span class="badge badge-pill search-badge" (click)="onSrClick($event)"
+        [ngClass]="{'sb-active': sr_dict['sr-ns']}"id="sr-ns">NS</span>
+    <span class="badge badge-pill search-badge" (click)="onSrClick($event)"
+        [ngClass]="{'sb-active': sr_dict['sr-on']}" id="sr-on">ON</span>
+    <span class="badge badge-pill search-badge" (click)="onSrClick($event)"
+        [ngClass]="{'sb-active': sr_dict['sr-pe']}" id="sr-pe">PE</span>
+    <span class="badge badge-pill search-badge" (click)="onSrClick($event)"
+        [ngClass]="{'sb-active': sr_dict['sr-qc']}" id="sr-qc">QC</span>
+    <span class="badge badge-pill search-badge" (click)="onSrClick($event)"
+        [ngClass]="{'sb-active': sr_dict['sr-sk']}" id="sr-sk">SK</span>
+    <span class="badge badge-pill search-badge" (click)="onSrClick($event)"
+        id="sr-all">ALL</span>
+<br/>
+Genres: 
+    <span class="badge badge-pill search-badge" (click)="onSgClick($event)"
+        [ngClass]="{'sb-active': sg_dict['sg-ac']}" id="sg-ac">acoustic</span>
+    <span class="badge badge-pill search-badge" (click)="onSgClick($event)"
+        [ngClass]="{'sb-active': sg_dict['sg-al']}" id="sg-al">alt</span>
+    <span class="badge badge-pill search-badge" (click)="onSgClick($event)"
+        [ngClass]="{'sb-active': sg_dict['sg-am']}" id="sg-am">ambient</span>
+    <span class="badge badge-pill search-badge" (click)="onSgClick($event)"
+        [ngClass]="{'sb-active': sg_dict['sg-bl']}" id="sg-bl">blues</span>
+    <span class="badge badge-pill search-badge" (click)="onSgClick($event)"
+        [ngClass]="{'sb-active': sg_dict['sg-co']}" id="sg-co">country</span>
+    <span class="badge badge-pill search-badge" (click)="onSgClick($event)"
+        [ngClass]="{'sb-active': sg_dict['sg-el']}" id="sg-el">electronic</span>
+    <span class="badge badge-pill search-badge" (click)="onSgClick($event)"
+        [ngClass]="{'sb-active': sg_dict['sg-ex']}" id="sg-ex">experimental</span>
+    <span class="badge badge-pill search-badge" (click)="onSgClick($event)"
+        [ngClass]="{'sb-active': sg_dict['sg-fo']}" id="sg-fo">folk</span>
+    <span class="badge badge-pill search-badge" (click)="onSgClick($event)"
+        [ngClass]="{'sb-active': sg_dict['sg-fu']}" id="sg-fu">funk</span>
+    <span class="badge badge-pill search-badge" (click)="onSgClick($event)"
+        [ngClass]="{'sb-active': sg_dict['sg-hi']}" id="sg-hi">hiphop</span>
+    <span class="badge badge-pill search-badge" (click)="onSgClick($event)"
+        [ngClass]="{'sb-active': sg_dict['sg-ja']}" id="sg-ja">jazz</span>
+    <span class="badge badge-pill search-badge" (click)="onSgClick($event)"
+        [ngClass]="{'sb-active': sg_dict['sg-po']}" id="sg-po">pop</span>
+    <span class="badge badge-pill search-badge" (click)="onSgClick($event)"
+        [ngClass]="{'sb-active': sg_dict['sg-pu']}" id="sg-pu">punk</span>
+    <span class="badge badge-pill search-badge" (click)="onSgClick($event)"
+        [ngClass]="{'sb-active': sg_dict['sg-rn']}" id="sg-rn">rnb</span>
+    <span class="badge badge-pill search-badge" (click)="onSgClick($event)"
+        [ngClass]="{'sb-active': sg_dict['sg-re']}" id="sg-re">reggae</span>
+    <span class="badge badge-pill search-badge" (click)="onSgClick($event)"
+        [ngClass]="{'sb-active': sg_dict['sg-ro']}" id="sg-ro">rock</span>
+    <span class="badge badge-pill search-badge" (click)="onSgClick($event)"
+        [ngClass]="{'sb-active': sg_dict['sg-so']}" id="sg-so">soundtrack</span>
+    <span class="badge badge-pill search-badge" (click)="onSgClick($event)"
+        [ngClass]="{'sb-active': sg_dict['sg-wo']}" id="sg-wo">world</span> 
+    <span class="badge badge-pill search-badge" (click)="onSgClick($event)"
+        [ngClass]="{'sb-active': sg_dict['sg-all']}" id="sg-all">all</span> 
+
+<br/>        
+<button (click)="onSeaClick($event)" type="button"
+        class="region-button float-right" id="sb-cs">Search</button>
+
+</div>
+
+    
+
+</div>
+</div>
+</div>
+</div>
+
+
+</main>
