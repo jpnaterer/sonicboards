@@ -45,11 +45,10 @@
 
 <div class="card-body" style="font-size:0; text-align: center;">
 <!---------------------------- PITCHFORK -------------------------------->
-<div [hidden]="current_tab != 'pitchfork'">
+<div *ngIf="current_tab === 'pitchfork'">
 <div *ngFor=" let obj of pitchfork_data; let i = index" 
     class="container album-display pl-0 pr-0"
-    [ngStyle]="{'width': i < 5 ? '18.8%' : 
-    (i < 11 ? '15.66%' : '13.43%') }">
+    [ngStyle]="{'width': i < 5 ? '18.8%' : (i < 12 ? '13.43%' : '11.75%') }">
     <a href="{{ obj.url }}" target="_blank">
         <img src="{{ obj.sp_img }}" width="100%"></a>
     <div class="genre-badge" *ngIf="genre_flag" [@genreToggle]>
@@ -59,13 +58,12 @@
 </div>
 
 <!---------------------------- ALLMUSIC -------------------------------->
-<div [hidden]="current_tab != 'allmusic'">
+<div *ngIf="current_tab === 'allmusic'">
 <div *ngFor="let obj of allmusic_data; let i = index" 
     class="container album-display pl-0 pr-0"
-    [ngStyle]="{'width': i < 5 ? '18.8%' : 
-    (i < 11 ? '15.66%' : '13.43%') }">
+    [ngStyle]="{'width': i < 5 ? '18.8%' : (i < 12 ? '13.43%' : '11.75%') }">
     <a href="{{ obj.url }}" target="_blank">
-        <img src="{{ obj.sp_img }}" width="100%"></a>
+        <img [src]=" obj.sp_img " width="100%" max-width="50px"></a>
     <div class="genre-badge" *ngIf="genre_flag" [@genreToggle]>
     <span class="badge badge-pill genre-{{ obj.genre }}">{{ obj.genre }}</span>
     </div>

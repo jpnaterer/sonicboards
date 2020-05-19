@@ -63,10 +63,10 @@
 
 <div class="card-body" style="font-size:0; text-align: center;">
 <!---------------------------- TORONTO -------------------------------->
-<div [hidden]="current_tab != 'toronto'">
+<div *ngIf="current_tab === 'toronto'">
 <div *ngFor=" let obj of toronto_data; let i = index" 
     class="container album-display pl-0 pr-0"
-    [ngStyle]="{'width': i < 5 ? '18.8%' : (i < 11 ? '15.66%' : '13.43%') }">
+    [ngStyle]="{'width': i < 5 ? '18.8%' : (i < 12 ? '13.43%' : '11.75%') }">
     <a href="{{ obj.url }}" target="_blank">
         <img src="{{ obj.sp_img }}" width="100%"></a>
     <div class="genre-badge" *ngIf="genre_flag" [@genreToggle]>
@@ -76,11 +76,10 @@
 </div>
 
 <!---------------------------- MONTREAL -------------------------------->
-<div [hidden]="current_tab != 'montreal'">
+<div *ngIf="current_tab === 'montreal'">
 <div *ngFor="let obj of montreal_data; let i = index" 
     class="container album-display pl-0 pr-0"
-    [ngStyle]="{'width': i < 5 ? '18.8%' : 
-    (i < 11 ? '15.66%' : '13.43%') }">
+    [ngStyle]="{'width': i < 5 ? '18.8%' : (i < 12 ? '13.43%' : '11.75%') }">
     <a href="{{ obj.url }}" target="_blank">
         <img src="{{ obj.sp_img }}" width="100%"></a>
     <div class="genre-badge" *ngIf="genre_flag" [@genreToggle]>
@@ -90,11 +89,10 @@
 </div>
 
 <!---------------------------- BC -------------------------------->
-<div [hidden]="current_tab != 'bc'">
+<div *ngIf="current_tab === 'bc'">
 <div *ngFor="let obj of bc_data; let i = index" 
     class="container album-display pl-0 pr-0"
-    [ngStyle]="{'width': i < 5 ? '18.8%' : 
-    (i < 11 ? '15.66%' : '13.43%') }">
+    [ngStyle]="{'width': i < 5 ? '18.8%' : (i < 12 ? '13.43%' : '11.75%') }">
     <a href="{{ obj.url }}" target="_blank">
         <img src="{{ obj.sp_img }}" width="100%"></a>
     <div class="genre-badge" *ngIf="genre_flag" [@genreToggle]>
@@ -104,11 +102,10 @@
 </div>
 
 <!---------------------------- PRAIRIES -------------------------------->
-<div [hidden]="current_tab != 'prairies'">
+<div *ngIf="current_tab === 'prairies'">
 <div *ngFor="let obj of prairies_data; let i = index" 
     class="container album-display pl-0 pr-0"
-    [ngStyle]="{'width': i < 5 ? '18.8%' : 
-    (i < 11 ? '15.66%' : '13.43%') }">
+    [ngStyle]="{'width': i < 5 ? '18.8%' : (i < 12 ? '13.43%' : '11.75%') }">
     <a href="{{ obj.url }}" target="_blank">
         <img src="{{ obj.sp_img }}" width="100%"></a>
     <div class="genre-badge" *ngIf="genre_flag" [@genreToggle]>
@@ -118,11 +115,10 @@
 </div>
 
 <!---------------------------- ONTARIO -------------------------------->
-<div [hidden]="current_tab != 'ontario'">
+<div *ngIf="current_tab === 'ontario'">
 <div *ngFor="let obj of ontario_data; let i = index" 
     class="container album-display pl-0 pr-0"
-    [ngStyle]="{'width': i < 5 ? '18.8%' : 
-    (i < 11 ? '15.66%' : '13.43%') }">
+    [ngStyle]="{'width': i < 5 ? '18.8%' : (i < 12 ? '13.43%' : '11.75%') }">
     <a href="{{ obj.url }}" target="_blank">
         <img src="{{ obj.sp_img }}" width="100%"></a>
     <div class="genre-badge" *ngIf="genre_flag" [@genreToggle]>
@@ -132,11 +128,10 @@
 </div>
 
 <!---------------------------- QUEBEC -------------------------------->
-<div [hidden]="current_tab != 'quebec'">
+<div *ngIf="current_tab === 'quebec'">
 <div *ngFor="let obj of quebec_data; let i = index" 
     class="container album-display pl-0 pr-0"
-    [ngStyle]="{'width': i < 5 ? '18.8%' : 
-    (i < 11 ? '15.66%' : '13.43%') }">
+    [ngStyle]="{'width': i < 5 ? '18.8%' : (i < 12 ? '13.43%' : '11.75%') }">
     <a href="{{ obj.url }}" target="_blank">
         <img src="{{ obj.sp_img }}" width="100%"></a>
     <div class="genre-badge" *ngIf="genre_flag" [@genreToggle]>
@@ -146,11 +141,10 @@
 </div>
 
 <!---------------------------- ATLANTIC -------------------------------->
-<div [hidden]="current_tab != 'atlantic'">
+<div *ngIf="current_tab === 'atlantic'">
 <div *ngFor="let obj of atlantic_data; let i = index" 
     class="container album-display pl-0 pr-0"
-    [ngStyle]="{'width': i < 5 ? '18.8%' : 
-    (i < 11 ? '15.66%' : '13.43%') }">
+    [ngStyle]="{'width': i < 5 ? '18.8%' : (i < 12 ? '13.43%' : '11.75%') }">
     <a href="{{ obj.url }}" target="_blank">
         <img src="{{ obj.sp_img }}" width="100%"></a>
     <div class="genre-badge" *ngIf="genre_flag" [@genreToggle]>
@@ -163,8 +157,7 @@
 <div *ngIf="current_tab === 'custom'">
 <div *ngFor="let obj of custom_data; let i = index" 
     class="container album-display pl-0 pr-0"
-    [ngStyle]="{'width': i < 5 ? '18.8%' : 
-    (i < 11 ? '15.66%' : '13.43%') }">
+    [ngStyle]="{'width': i < 5 ? '18.8%' : (i < 12 ? '13.43%' : '11.75%') }">
     <a href="{{ obj.url }}" target="_blank">
         <img src="{{ obj.sp_img }}" width="100%"></a>
     <div class="genre-badge" *ngIf="genre_flag" [@genreToggle]>

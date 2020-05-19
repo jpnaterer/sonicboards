@@ -25,7 +25,7 @@ app.use((req, res, next) => {
 
 app.post('/api/reviews', async (req, res) => {
     const releases = await Reviews.find({source: req.body.source})
-        .sort({'score': -1}).limit(25)
+        .sort({'score': -1}).limit(20)
     releases.map(obj => {
         if (obj.genre === null) return obj
         obj.genre = obj.genre.toLowerCase();
@@ -43,10 +43,10 @@ app.post('/api/canada', async (req, res) => {
     if(req.body.genres){
         releases = await Canada.find(
             {region: {$in: req.body.regions}, genre: {$in: req.body.genres}})
-            .sort({'score': -1}).limit(25)
+            .sort({'score': -1}).limit(20)
     }else{
         releases = await Canada.find(
-            {region: { $in: req.body.regions }}).sort({'score': -1}).limit(25)
+            {region: { $in: req.body.regions }}).sort({'score': -1}).limit(20)
     }
     releases.map(obj => {
         if (obj.genre === null) return obj
