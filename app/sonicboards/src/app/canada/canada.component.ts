@@ -179,32 +179,46 @@ export class CanadaComponent implements OnInit {
     
     this.httpClient
     .post(this.node_serve_url + '/api/canada', {regions: ['toronto']})
-    .subscribe((data : Array<Object>)=> { this.toronto_data = data })
+    .subscribe((data : Array<Object>)=> { 
+      this.preloadImages(data); this.toronto_data = data })
 
     this.httpClient
     .post(this.node_serve_url + '/api/canada', {regions: ['montreal']})
-    .subscribe((data : Array<Object>)=> { this.montreal_data = data })
+    .subscribe((data : Array<Object>)=> { 
+      this.preloadImages(data); this.montreal_data = data })
 
     this.httpClient
     .post(this.node_serve_url + '/api/canada', {regions: this.BC_TAGS})
-    .subscribe((data : Array<Object>)=> { this.bc_data = data })
+    .subscribe((data : Array<Object>)=> { 
+      this.preloadImages(data); this.bc_data = data })
 
     this.httpClient
     .post(this.node_serve_url + '/api/canada', {regions: this.PRAIRIE_TAGS})
-    .subscribe((data : Array<Object>)=> { this.prairies_data = data })
+    .subscribe((data : Array<Object>)=> { 
+      this.preloadImages(data); this.prairies_data = data })
 
     this.httpClient
     .post(this.node_serve_url + '/api/canada', {regions: this.ONTARIO_TAGS})
-    .subscribe((data : Array<Object>)=> { this.ontario_data = data })
+    .subscribe((data : Array<Object>)=> { 
+      this.preloadImages(data); this.ontario_data = data })
     
     this.httpClient
     .post(this.node_serve_url + '/api/canada', {regions: this.QUEBEC_TAGS})
-    .subscribe((data : Array<Object>)=> { this.quebec_data = data })
+    .subscribe((data : Array<Object>)=> { 
+      this.preloadImages(data); this.quebec_data = data })
 
     this.httpClient
     .post(this.node_serve_url + '/api/canada', {regions: this.ATLANTIC_TAGS})
-    .subscribe((data : Array<Object>)=> { this.atlantic_data = data })
+    .subscribe((data : Array<Object>)=> { 
+      this.preloadImages(data); this.atlantic_data = data })
   }
 
+  preloadImages(api_data) {
+    var images = []
+    for (var i = 0; i < api_data.length; i++) {
+      images[i] = new Image();
+      images[i].src = api_data[i]['sp_img'];
+    }
+  }
 
 }

@@ -68,11 +68,21 @@ export class ReviewComponent implements OnInit {
 
     this.httpClient
     .post(this.node_serve_url + '/api/reviews', {source: 'pitchfork'})
-    .subscribe((data : Array<Object>)=> { this.pitchfork_data = data })
+    .subscribe((data : Array<Object>)=> { 
+      this.preloadImages(data); this.pitchfork_data = data })
 
     this.httpClient
     .post(this.node_serve_url + '/api/reviews', {source: 'allmusic'})
-    .subscribe((data : Array<Object>)=> { this.allmusic_data = data })
+    .subscribe((data : Array<Object>)=> { 
+      this.preloadImages(data); this.allmusic_data = data })
+  }
+
+  preloadImages(api_data) {
+    var images = []
+    for (var i = 0; i < api_data.length; i++) {
+      images[i] = new Image();
+      images[i].src = api_data[i]['sp_img'];
+    }
   }
 
 }
