@@ -1,10 +1,11 @@
 import requests
 import json
 import csv
+import time
 import scrape
 from datetime import datetime
 
-# http://www.citizenshipcounts.ca/guide/regions1/canadas-5-regions
+# A dict of numerical location codes used by the bandcamp API.
 LOCATION_CODES = {'novascotia': 6091530, 'ottawa': 6094817, 'pei': 6113358,
     'newbrunswick': 6087430, 'saskatchewan': 6141242, 'newfoundland': 6354959,
     'victoria': 6174041, 'edmonton': 5946768, 'calgary': 5913490,
@@ -27,13 +28,22 @@ def get_bandcamp_releases(tag_str, page_count=10,
     for i in range(1, page_count + 1):
         json_obj = {"filters": {"format": "all", "location": location_id,
             "sort": sort_str, "tags": [tag_str]}, "page": i}
+
+        # Attempt search, if fail, wait 5s to try again.
         x = requests.post(url, json=json_obj)
+        if (not x.ok):
+            print("*** Failed Search, Continuing in 5s ***")
+            time.sleep(5)
+            x = requests.post(url, json=json_obj)
         request_results = x.json()
 
         for result in request_results['items']:
             # Skip albums that have genre within the ignore list.
             genre_str = result['genre']
             if genre_str in GENRES_TO_IGNORE:
+                continue
+            # Skip albums that have not released, aka, are up for pre-order.
+            if result['is_preorder']:
                 continue
 
             artist_str = result['artist']
@@ -43,66 +53,81 @@ def get_bandcamp_releases(tag_str, page_count=10,
             results.append({'artist': artist_str, 'title': title_str,
                 'genre': genre_str, 'region': region_str, 'url': url_str})
 
+        # Stop searching for pages if we reach the final page.
+        if(not request_results['more_available']):
+            break
+
     return results
 
 
-def get_bandcamp_scores(results):
-    for r in results:
+# A utility function to effectively search each region w/o duplicates.
+def get_bandcamp_releases_util(album_list,
+        tag_str='canada', location_id=0, region_str=None):
+
+    # Complete one large recent release search and one small popular search.
+    if region_str is None:
+        res1 = get_bandcamp_releases(tag_str, page_count=10, sort_str='date')
+        res2 = get_bandcamp_releases(tag_str, page_count=1, sort_str='pop')
+    else:
+        res1 = get_bandcamp_releases('canada', page_count=10,
+            location_id=location_id, region_str=region_str, sort_str='date')
+        res2 = get_bandcamp_releases('canada', page_count=1,
+            location_id=location_id, region_str=region_str, sort_str='pop')
+
+    # Ensure the url is not yet in the current list.
+    url_list = [r['url'] for r in album_list]
+    for result in res1:
+        if result['url'] not in url_list:
+            album_list.append(result)
+    url_list = [r['url'] for r in album_list]
+    for result in res2:
+        if result['url'] not in url_list:
+            album_list.append(result)
+
+    return album_list
+
+
+# Generate recommendation scores. These are likely overwritten when the
+# data json files are transferred into the mongo database.
+def get_bandcamp_scores(album_list):
+    for r in album_list:
         if not('sp_popularity' in r):
             r['sp_popularity'] = 0
         date_obj = datetime.strptime(r['sp_date'], "%Y-%m-%dT00:00.000Z")
         time_score = max(60 - (datetime.now() - date_obj).days, 0)
         r['score'] = r['sp_popularity'] / 100 * 40 + time_score / 60 * 60
         r['score'] = round(r['score'], 3)
-
-    # Sort by treblechef recommendation score.
-    results = sorted(results, key=lambda k: k['score'], reverse=True)
-    return results
+    album_list = sorted(album_list, key=lambda k: k['score'], reverse=True)
+    return album_list
 
 
 # WHERE THE SEARCHING TAKES PLACE ######################################
 
 # Retrieve primary locations by popularity.
-releases_full = list()
+album_list = list()
 for tag_str in ['toronto', 'montreal', 'vancouver']:
     print("Scraping Bandcamp %s" % tag_str)
-    results = get_bandcamp_releases(tag_str)
-    releases_full.extend(results)
+    album_list = get_bandcamp_releases_util(album_list, tag_str)
 
 # Retrieve secondary locations by date.
 for region_str, location_id in LOCATION_CODES.items():
     print("Scraping Bandcamp %s" % region_str)
-    results = get_bandcamp_releases('canada', page_count=10,
-        location_id=location_id, region_str=region_str, sort_str='date')
+    album_list = get_bandcamp_releases_util(album_list,
+        tag_str='canada', location_id=location_id, region_str=region_str)
 
-    # Ensure the location is not yet in the current list.
-    url_list = [r['url'] for r in releases_full]
-    for result in results:
-        if result['url'] not in url_list:
-            releases_full.append(result)
-
-    # Retrieve remaining secondary locations by popularity.
-    results = get_bandcamp_releases('canada', page_count=1,
-        location_id=location_id, region_str=region_str, sort_str='pop')
-
-    # Ensure the location is not yet in the current list.
-    url_list = [r['url'] for r in releases_full]
-    for result in results:
-        if result['url'] not in url_list:
-            releases_full.append(result)
 
 # Write results to a csv file before the spotify search for debugging.
 # with open('results/canada_pre.csv', mode='w') as csv_file:
 #    fieldnames = ['artist', 'title', 'genre', 'url', 'region']
 #    csv_writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
 #    csv_writer.writeheader()
-#    csv_writer.writerows(releases_full)
+#    csv_writer.writerows(album_list)
 
-print('Fetching Spotify Information', end='', flush=True)
+print('Fetching %d Spotify Results' % len(album_list), end='', flush=True)
 current_time = datetime.now()
-releases_full = scrape.get_spotify_albums(releases_full)
-releases_full = scrape.get_spotify_artist(releases_full)
-releases_full = get_bandcamp_scores(releases_full)
+album_list = scrape.get_spotify_albums(album_list)
+album_list = scrape.get_spotify_artist(album_list)
+album_list = get_bandcamp_scores(album_list)
 print(", Completed in %ds" % (datetime.now() - current_time).seconds)
 
 # Write results to csv and json files.
@@ -113,7 +138,7 @@ with open('results/canada.csv', mode='w') as csv_file:
     csv_writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
 
     csv_writer.writeheader()
-    csv_writer.writerows(releases_full)
+    csv_writer.writerows(album_list)
 
 with open('results/canada.json', 'w') as json_file:
-    json.dump(releases_full, json_file, indent=4)
+    json.dump(album_list, json_file, indent=4)

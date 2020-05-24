@@ -63,8 +63,7 @@ def get_pitchfork_scores(album_list):
         date_obj = datetime.strptime(album['sp_date'], "%Y-%m-%dT00:00.000Z")
         time_score = max(60 - (datetime.now() - date_obj).days, 0)
         album['score'] = (album['rating'] / 10) * 60 + \
-            album['sp_popularity'] / 100 * 20 + \
-            time_score / 60 * 20
+            album['sp_popularity'] / 100 * 20 + time_score / 60 * 20
         album['score'] = round(album['score'], 3)
 
     album_list = sorted(album_list, key=lambda k: k['score'], reverse=True)

@@ -165,13 +165,6 @@ export class CanadaComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    // Setup timestamp at top right of page.
-    var today = new Date()
-    var w = new Date(today.setDate(today.getDate()-today.getDay()-1))
-    var d = w.getDate() < 10 ? '0' + w.getDate() : w.getDate()
-    var m = w.getMonth() < 9 ? '0' + (w.getMonth()+1) : (w.getMonth()+1)
-    this.date_stamp_str = `${m}-${d}-${w.getFullYear()}`
-
     // Setup backend connection. Https connection if in production mode.
     if(environment.production){
       this.node_serve_url = "https://sonicboards.com:3000"
@@ -211,6 +204,15 @@ export class CanadaComponent implements OnInit {
     .post(this.node_serve_url + '/api/canada', {regions: this.ATLANTIC_TAGS})
     .subscribe((data : Array<Object>)=> { 
       this.preloadImages(data); this.atlantic_data = data })
+
+    this.httpClient
+    .post(this.node_serve_url + '/api/config', {})
+    .subscribe((data : string)=> { 
+      var w = new Date(data)
+      var d = w.getDate() < 10 ? '0' + w.getDate() : w.getDate()
+      var m = w.getMonth() < 9 ? '0' + (w.getMonth()+1) : (w.getMonth()+1)
+      this.date_stamp_str = `${m}-${d}-${w.getFullYear()}`
+    })
   }
 
   preloadImages(api_data) {

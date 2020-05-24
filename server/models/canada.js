@@ -8,7 +8,7 @@ const CanadaSchema = new mongoose.Schema({
     genre: String,
     region: String,
     url: String,
-    sp_date: String,
+    sp_date: Date,
     sp_album_id: String,
     sp_img: String,
     sp_artist_id: String,

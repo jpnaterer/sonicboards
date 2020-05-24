@@ -1,5 +1,5 @@
 import spotipy
-from datetime import datetime
+import textdistance
 from spotipy.oauth2 import SpotifyClientCredentials
 
 # Create a spotipy object to query spotify. Requires exporting
@@ -24,7 +24,7 @@ def get_spotify_albums(album_list_in):
     for album in album_list_in:
         # Spotify results.
         q = "%s %s" % (album['artist'], album['title'])
-        sp_results = sp.search(q, type='album', limit=5)
+        sp_results = sp.search(q, type='album', limit=1)
         sp_results = sp_results['albums']['items']
 
         # Remove elements from the list that are not found on spotify.
@@ -33,18 +33,24 @@ def get_spotify_albums(album_list_in):
             continue
         sp_result = sp_results[0]
 
+        # Remove list elements that do not have a precise release date.
+        if sp_result['release_date_precision'] != 'day':
+            continue
+
+        # Remove elements that are too far a distance from intended search.
+        # Token based string difference used between album title and artist.
+        txt_diff1 = textdistance.jaccard.normalized_distance(
+            album['artist'].lower(), sp_result['artists'][0]['name'].lower())
+        txt_diff2 = textdistance.jaccard.normalized_distance(
+            album['title'].lower(), sp_result['name'].lower())
+        if(txt_diff1 + txt_diff2 > 1):
+            continue
+
         # Get spotify album image
         image_str = None
         for img_obj in sp_result['images']:
             if img_obj['height'] == 300:
                 image_str = img_obj['url']
-
-        # Remove list elements outside of past two months.
-        if sp_result['release_date_precision'] != 'day':
-            continue
-        date_obj = datetime.strptime(sp_result['release_date'], '%Y-%m-%d')
-        if (datetime.now() - date_obj).days > 60:
-            continue
 
         album['sp_date'] = "%sT00:00.000Z" % sp_result['release_date']
         album['sp_album_id'] = sp_result['id']

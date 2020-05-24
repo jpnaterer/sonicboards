@@ -14,6 +14,7 @@ mongoose.connect('mongodb://localhost:27017/sonicboards',
     {useNewUrlParser: true, useUnifiedTopology: true})
 const Canada = require('./models/canada')
 const Reviews = require('./models/reviews')
+const Config = require('./models/config')
 
 // Adjust response by adding CORS headers.
 app.use(bodyParser.json())
@@ -56,6 +57,11 @@ app.post('/api/canada', async (req, res) => {
         return obj;
     })
     res.send(releases)
+})
+
+app.post('/api/config', async (req, res) => {
+    const c = await Config.findOne({})
+    res.send(c.date)
 })
 
 if (prod_flag){

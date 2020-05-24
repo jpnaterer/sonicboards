@@ -13,8 +13,10 @@ def add_to_collection(collection, json_file):
 
     # Insert new albums to database, ensuring no duplicates are added.
     for d in new_data:
-        if d['url'] not in curr_urls:
-            collection.insert_one(d)
+        if d['url'] in curr_urls:
+            continue
+        d['sp_date'] = datetime.strptime(d['sp_date'], "%Y-%m-%dT00:00.000Z")
+        collection.insert_one(d)
 
 
 def update_scores(collection, source_str):
@@ -24,7 +26,7 @@ def update_scores(collection, source_str):
         curr_data = list(collection.find())
 
     for d in curr_data:
-        date_obj = datetime.strptime(d['sp_date'], "%Y-%m-%dT00:00.000Z")
+        date_obj = d['sp_date']
         if source_str == 'bandcamp':
             time_score = max(60 - (datetime.now() - date_obj).days, 0)
             new_score = d['sp_popularity'] / 100 * 40 + time_score / 60 * 60
@@ -54,10 +56,15 @@ update_scores(connect.sonicboards.canada, 'bandcamp')
 update_scores(connect.sonicboards.reviews, 'pitchfork')
 update_scores(connect.sonicboards.reviews, 'allmusic')
 
+# Set update timestamp in config collection.
+collection = connect.sonicboards.config
+collection.update_one({}, {'$set': {'date': datetime.now()}})
+
 # sudo systemctl start mongod
 # robo3t, postman for post requests
 # mongoexport --collection=canada --db=sonicboards --out=canada.json
-# mongoimport --collection=canada --db=sonicboards --file=canada.json
 # mongoexport --collection=reviews --db=sonicboards --out=reviews.json
+# mongoexport --collection=config --db=sonicboards --out=config.json
+# mongoimport --collection=canada --db=sonicboards --file=canada.json
 # mongoimport --collection=reviews --db=sonicboards --file=reviews.json
-# db.canada.find({ "region": { "$in": ["ottawa", "pei"] } }, {"region": 1} )
+# mongoimport --collection=config --db=sonicboards --file=config.json

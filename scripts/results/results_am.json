@@ -1,5 +1,19 @@
 [
     {
+        "artist": "Steve Earle",
+        "title": "Ghosts of West Virginia",
+        "genre": "Pop/Rock",
+        "rating": 4.5,
+        "url": "https://www.allmusic.com/album/ghosts-of-west-virginia-mw0003365551",
+        "source": "allmusic",
+        "sp_date": "2020-05-22T00:00.000Z",
+        "sp_album_id": "6wQa5jlPJRxZnQjpZLlsMD",
+        "sp_img": "https://i.scdn.co/image/ab67616d00001e02f8ce2ad60312eb0e8ebb274d",
+        "sp_artist_id": "2UBTfUoLI07iRqGeUrwhZh",
+        "sp_popularity": 62,
+        "score": 86.4
+    },
+    {
         "artist": "Jason Isbell",
         "title": "Reunions",
         "genre": "Pop/Rock",
@@ -10,8 +24,8 @@
         "sp_album_id": "5XIafkwTpyvL7jjLJx1xKz",
         "sp_img": "https://i.scdn.co/image/ab67616d00001e028fc91786225ca4ee7e868060",
         "sp_artist_id": "3Lg3FGwBxOGuefqekQzRUf",
-        "sp_popularity": 65,
-        "score": 86.333
+        "sp_popularity": 67,
+        "score": 85.067
     },
     {
         "artist": "Perfume Genius",
@@ -24,8 +38,36 @@
         "sp_album_id": "6daEdTBi1hyFQgmsnR7oRr",
         "sp_img": "https://i.scdn.co/image/ab67616d00001e029af34850f5125ef195d6101a",
         "sp_artist_id": "2ueoLVCXQ948OfhVvAy3Nn",
-        "sp_popularity": 63,
-        "score": 85.933
+        "sp_popularity": 66,
+        "score": 84.867
+    },
+    {
+        "artist": "Moses Sumney",
+        "title": "gr\u00e6",
+        "genre": "Pop/Rock",
+        "rating": 4.5,
+        "url": "https://www.allmusic.com/album/gr%C3%A6-mw0003337384",
+        "source": "allmusic",
+        "sp_date": "2020-05-15T00:00.000Z",
+        "sp_album_id": "35CHoLB0GEwYlOomriifC6",
+        "sp_img": "https://i.scdn.co/image/ab67616d00001e028b40e0ef79069fb9bcc560d9",
+        "sp_artist_id": "5W10uJRsbt9bROJDKoI1Wn",
+        "sp_popularity": 65,
+        "score": 84.667
+    },
+    {
+        "artist": "Damu the Fudgemunk",
+        "title": "Ocean Bridges",
+        "genre": "Jazz",
+        "rating": 4.5,
+        "url": "https://www.allmusic.com/album/ocean-bridges-mw0003380380",
+        "source": "allmusic",
+        "sp_date": "2020-05-22T00:00.000Z",
+        "sp_album_id": "1F7Z8pkrcZrgtpMFOGviH6",
+        "sp_img": "https://i.scdn.co/image/ab67616d00001e0238c87446b81a035226d79449",
+        "sp_artist_id": "7Mws36yO3takBR2WMsXOkM",
+        "sp_popularity": 51,
+        "score": 84.2
     },
     {
         "artist": "Hayley Williams",
@@ -39,7 +81,7 @@
         "sp_img": "https://i.scdn.co/image/ab67616d00001e02896e2483613a566bcb00d324",
         "sp_artist_id": "6Rx1JKzBrSzoKQtmbVmBnM",
         "sp_popularity": 74,
-        "score": 85.8
+        "score": 84.133
     },
     {
         "artist": "Moby",
@@ -53,7 +95,7 @@
         "sp_img": "https://i.scdn.co/image/ab67616d00001e02d0ced2393c943af1a99fcfa7",
         "sp_artist_id": "3OsRAKCvk37zwYcnzRf5XF",
         "sp_popularity": 73,
-        "score": 81.933
+        "score": 80.267
     },
     {
         "artist": "Natalia Lafourcade",
@@ -67,7 +109,7 @@
         "sp_img": "https://i.scdn.co/image/ab67616d00001e02e1a85022ed435fa9afb79640",
         "sp_artist_id": "1hcdI2N1023RvSwLzTtdsp",
         "sp_popularity": 76,
-        "score": 80.2
+        "score": 78.533
     },
     {
         "artist": "I Break Horses",
@@ -80,8 +122,8 @@
         "sp_album_id": "4X4NJOq0LEWGImFNCnczaS",
         "sp_img": "https://i.scdn.co/image/ab67616d00001e02bfe799809a2576aa4b322a09",
         "sp_artist_id": "1H58rS29XotmFJWT3KCnl0",
-        "sp_popularity": 41,
-        "score": 79.2
+        "sp_popularity": 42,
+        "score": 77.733
     },
     {
         "artist": "Nick Hakim",
@@ -94,8 +136,22 @@
         "sp_album_id": "5wHIOaV0DXf73kL7i5blmM",
         "sp_img": "https://i.scdn.co/image/ab67616d00001e02a9ff12ef64b31c218c68ceca",
         "sp_artist_id": "1Goe2NezNnym45kco2xTk6",
-        "sp_popularity": 57,
-        "score": 78.733
+        "sp_popularity": 58,
+        "score": 77.267
+    },
+    {
+        "artist": "Populous",
+        "title": "W",
+        "genre": "Pop/Rock",
+        "rating": 4.0,
+        "url": "https://www.allmusic.com/album/w-mw0003376921",
+        "source": "allmusic",
+        "sp_date": "2020-05-22T00:00.000Z",
+        "sp_album_id": "2ykygMGjCj9xRwHsZGn3cT",
+        "sp_img": "https://i.scdn.co/image/ab67616d00001e02e1b2bd011fdf0c9652dee855",
+        "sp_artist_id": "5Uy8Skuxzxf38jMDTndKIU",
+        "sp_popularity": 46,
+        "score": 77.2
     },
     {
         "artist": "Sleaford Mods",
@@ -108,8 +164,8 @@
         "sp_album_id": "1a9hLKtSfwy54hH18Ni6BS",
         "sp_img": "https://i.scdn.co/image/ab67616d00001e02e2ff1f0d2a2cb8038156209c",
         "sp_artist_id": "0otAqZw8htTsGHfqR491Yh",
-        "sp_popularity": 51,
-        "score": 77.533
+        "sp_popularity": 53,
+        "score": 76.267
     },
     {
         "artist": "Sparks",
@@ -122,8 +178,8 @@
         "sp_album_id": "43DZQacT84CN8EYfKcmeSL",
         "sp_img": "https://i.scdn.co/image/ab67616d00001e02895a7bdfa7114bd79cd8f595",
         "sp_artist_id": "7pwjGKaqnfkvS7eQbHaqyH",
-        "sp_popularity": 51,
-        "score": 77.533
+        "sp_popularity": 52,
+        "score": 76.067
     },
     {
         "artist": "Charli XCX",
@@ -136,8 +192,8 @@
         "sp_album_id": "3a9qH2VEsSiOZvMrjaS0Nu",
         "sp_img": "https://i.scdn.co/image/ab67616d00001e02664e38c99d077cc52ab48914",
         "sp_artist_id": "25uiPmTg16RbhZWAqwLBy5",
-        "sp_popularity": 79,
-        "score": 77.133
+        "sp_popularity": 80,
+        "score": 75.667
     },
     {
         "artist": "Jerry Paper",
@@ -150,22 +206,36 @@
         "sp_album_id": "5GOXHtp97u9FzMy1VzX1vs",
         "sp_img": "https://i.scdn.co/image/ab67616d00001e0209b69f892df78eff79054126",
         "sp_artist_id": "2gzxBoK71ohENPlxlshHV7",
-        "sp_popularity": 49,
-        "score": 77.133
+        "sp_popularity": 50,
+        "score": 75.667
     },
     {
-        "artist": "Car Seat Headrest",
-        "title": "Making a Door Less Open",
+        "artist": "Katie von Schleicher",
+        "title": "Consummation",
         "genre": "Pop/Rock",
         "rating": 4.0,
-        "url": "https://www.allmusic.com/album/making-a-door-less-open-mw0003362992",
+        "url": "https://www.allmusic.com/album/consummation-mw0003359830",
         "source": "allmusic",
-        "sp_date": "2020-05-01T00:00.000Z",
-        "sp_album_id": "1tuoWW0TpoI5oacIjwYBdL",
-        "sp_img": "https://i.scdn.co/image/ab67616d00001e02962ca53ba96df449c656bf38",
-        "sp_artist_id": "5PbpKlxQE0Ktl5lcNABoFf",
-        "sp_popularity": 66,
-        "score": 75.867
+        "sp_date": "2020-05-22T00:00.000Z",
+        "sp_album_id": "7BFCex0ujA1VHUvkqjqlnb",
+        "sp_img": "https://i.scdn.co/image/ab67616d00001e02462c80102094c50e964b662b",
+        "sp_artist_id": "68UA9076k6lewTq2slA1FN",
+        "sp_popularity": 33,
+        "score": 74.6
+    },
+    {
+        "artist": "Blake Mills",
+        "title": "Mutable Set",
+        "genre": "Pop/Rock",
+        "rating": 4.0,
+        "url": "https://www.allmusic.com/album/mutable-set-mw0003368857",
+        "source": "allmusic",
+        "sp_date": "2020-05-08T00:00.000Z",
+        "sp_album_id": "3WBhKuBk77KL4nUHkP2xaW",
+        "sp_img": "https://i.scdn.co/image/ab67616d00001e021458148758e5b7c8ea04ca9d",
+        "sp_artist_id": "4LhV33vJvXmFGSM3m5RzUR",
+        "sp_popularity": 54,
+        "score": 74.133
     },
     {
         "artist": "ARTHUR",
@@ -178,8 +248,64 @@
         "sp_album_id": "46jao2qqRTgIzkzHuE2wYs",
         "sp_img": "https://i.scdn.co/image/ab67616d00001e02db59437636f1219033bdc608",
         "sp_artist_id": "0vIme0FGc4SmFByKiV27tw",
-        "sp_popularity": 40,
-        "score": 75.333
+        "sp_popularity": 42,
+        "score": 74.067
+    },
+    {
+        "artist": "Indigo Girls",
+        "title": "Look Long",
+        "genre": "Pop/Rock",
+        "rating": 3.5,
+        "url": "https://www.allmusic.com/album/look-long-mw0003365240",
+        "source": "allmusic",
+        "sp_date": "2020-05-22T00:00.000Z",
+        "sp_album_id": "4e2BgEu0aICMknl0LiE4nl",
+        "sp_img": "https://i.scdn.co/image/ab67616d00001e02456797e45e3bc3418482e34a",
+        "sp_artist_id": "4wM29TDTr3HI0qFY3KoSFG",
+        "sp_popularity": 58,
+        "score": 73.6
+    },
+    {
+        "artist": "The 1975",
+        "title": "Notes on a Conditional Form",
+        "genre": "Pop/Rock",
+        "rating": 3.0,
+        "url": "https://www.allmusic.com/album/notes-on-a-conditional-form-mw0003328609",
+        "source": "allmusic",
+        "sp_date": "2020-05-22T00:00.000Z",
+        "sp_album_id": "0o5xjCboti8vXhdoUG9LYi",
+        "sp_img": "https://i.scdn.co/image/ab67616d00001e02dcc51318fa5dffe4bb3affae",
+        "sp_artist_id": "3mIj9lX2MWuHmhNCA7LSCW",
+        "sp_popularity": 83,
+        "score": 72.6
+    },
+    {
+        "artist": "Jon Balke",
+        "title": "Discourses",
+        "genre": "Avant-Garde",
+        "rating": 4.0,
+        "url": "https://www.allmusic.com/album/discourses-mw0003380494",
+        "source": "allmusic",
+        "sp_date": "2020-05-15T00:00.000Z",
+        "sp_album_id": "13CqdeTTiY5X2go3BHyIIa",
+        "sp_img": "https://i.scdn.co/image/ab67616d00001e02c198f90dd1aebdf6088bbc6d",
+        "sp_artist_id": "1rFjt7CpwkXN6SB7PjKviq",
+        "sp_popularity": 34,
+        "score": 72.467
+    },
+    {
+        "artist": "Reckless Kelly",
+        "title": "American Jackpot/American Girls",
+        "genre": "Pop/Rock",
+        "rating": 3.5,
+        "url": "https://www.allmusic.com/album/american-jackpot-american-girls-mw0003368491",
+        "source": "allmusic",
+        "sp_date": "2020-05-22T00:00.000Z",
+        "sp_album_id": "2xDHBirtzz6DxriEo6t6h4",
+        "sp_img": "https://i.scdn.co/image/ab67616d00001e023a42345cfda3945cda7cd6ab",
+        "sp_artist_id": "0jmPjksXqVrO92Urmx58vg",
+        "sp_popularity": 52,
+        "score": 72.4
     },
     {
         "artist": "Aaron Parks",
@@ -193,35 +319,21 @@
         "sp_img": "https://i.scdn.co/image/ab67616d00001e020a0d6baee8c35b4182d5bdca",
         "sp_artist_id": "22KzEvCtrTGf9l6k7zFcdv",
         "sp_popularity": 42,
-        "score": 73.4
+        "score": 71.733
     },
     {
-        "artist": "Austra",
-        "title": "Hirudin",
-        "genre": "Pop/Rock",
+        "artist": "Marisa Anderson",
+        "title": "The Quickening",
+        "genre": "Avant-Garde",
         "rating": 4.0,
-        "url": "https://www.allmusic.com/album/hirudin-mw0003366303",
+        "url": "https://www.allmusic.com/album/the-quickening-mw0003367418",
         "source": "allmusic",
-        "sp_date": "2020-05-01T00:00.000Z",
-        "sp_album_id": "70dAWY6KDpSriewnxFngXt",
-        "sp_img": "https://i.scdn.co/image/ab67616d00001e02cfc2352d0739633c24dd3cf8",
-        "sp_artist_id": "1o43SzzuLoyOxqThmp7s0g",
-        "sp_popularity": 52,
-        "score": 73.067
-    },
-    {
-        "artist": "Ghostpoet",
-        "title": "I Grow Tired But Dare Not Fall Asleep",
-        "genre": "Pop/Rock",
-        "rating": 4.0,
-        "url": "https://www.allmusic.com/album/i-grow-tired-but-dare-not-fall-asleep-mw0003362720",
-        "source": "allmusic",
-        "sp_date": "2020-05-01T00:00.000Z",
-        "sp_album_id": "64tlHrwYQoCnCyG46SVQk7",
-        "sp_img": "https://i.scdn.co/image/ab67616d00001e02ee3e4c7b84c3b89e3858f760",
-        "sp_artist_id": "69lEbRQRe29JdyLrewNAvD",
-        "sp_popularity": 50,
-        "score": 72.667
+        "sp_date": "2020-05-15T00:00.000Z",
+        "sp_album_id": "5wxtWLeap4Epa3VZPhKOcE",
+        "sp_img": "https://i.scdn.co/image/ab67616d00001e0279c78ec17509ef84f5f441d5",
+        "sp_artist_id": "2e5Czu1HGML44EmIuNsA4o",
+        "sp_popularity": 28,
+        "score": 71.267
     },
     {
         "artist": "John Stewart",
@@ -235,49 +347,7 @@
         "sp_img": "https://i.scdn.co/image/ab67616d00001e022a2adeb4295147513ad28b0a",
         "sp_artist_id": "1IEICAjQ2utMbLHi7zoc5f",
         "sp_popularity": 37,
-        "score": 72.4
-    },
-    {
-        "artist": "Diet Cig",
-        "title": "Do You Wonder About Me?",
-        "genre": "Pop/Rock",
-        "rating": 4.0,
-        "url": "https://www.allmusic.com/album/do-you-wonder-about-me-mw0003365061",
-        "source": "allmusic",
-        "sp_date": "2020-05-01T00:00.000Z",
-        "sp_album_id": "1LfkcrlTnQqx2AhHtuhJhB",
-        "sp_img": "https://i.scdn.co/image/ab67616d00001e02e9574bc62163cdceae31534c",
-        "sp_artist_id": "6ommlbuccgdiKSgjvVlQ4W",
-        "sp_popularity": 48,
-        "score": 72.267
-    },
-    {
-        "artist": "Marisa Anderson",
-        "title": "The Quickening",
-        "genre": "Avant-Garde",
-        "rating": 4.0,
-        "url": "https://www.allmusic.com/album/the-quickening-mw0003367418",
-        "source": "allmusic",
-        "sp_date": "2020-05-15T00:00.000Z",
-        "sp_album_id": "5wxtWLeap4Epa3VZPhKOcE",
-        "sp_img": "https://i.scdn.co/image/ab67616d00001e0279c78ec17509ef84f5f441d5",
-        "sp_artist_id": "2e5Czu1HGML44EmIuNsA4o",
-        "sp_popularity": 24,
-        "score": 72.133
-    },
-    {
-        "artist": "Chemtrails",
-        "title": "The Peculiar Smell of the Inevitable",
-        "genre": "Pop/Rock",
-        "rating": 4.0,
-        "url": "https://www.allmusic.com/album/the-peculiar-smell-of-the-inevitable-mw0003368204",
-        "source": "allmusic",
-        "sp_date": "2020-05-15T00:00.000Z",
-        "sp_album_id": "3MwbLQ3echQz4rIos7KhzD",
-        "sp_img": "https://i.scdn.co/image/ab67616d00001e025d3084ae51310ccb21ea7fa2",
-        "sp_artist_id": "2AvNtsTKAOkaoD7aonyHHJ",
-        "sp_popularity": 22,
-        "score": 71.733
+        "score": 70.733
     },
     {
         "artist": "Spirit Fest",
@@ -290,8 +360,64 @@
         "sp_album_id": "0v1KfeVLfs4gYCDfERfqoM",
         "sp_img": "https://i.scdn.co/image/ab67616d00001e0282ba47d2d752ae04696071fd",
         "sp_artist_id": "1pa1czQVBBys9koDmNMBRB",
-        "sp_popularity": 21,
-        "score": 71.533
+        "sp_popularity": 25,
+        "score": 70.667
+    },
+    {
+        "artist": "Chemtrails",
+        "title": "The Peculiar Smell of the Inevitable",
+        "genre": "Pop/Rock",
+        "rating": 4.0,
+        "url": "https://www.allmusic.com/album/the-peculiar-smell-of-the-inevitable-mw0003368204",
+        "source": "allmusic",
+        "sp_date": "2020-05-15T00:00.000Z",
+        "sp_album_id": "3MwbLQ3echQz4rIos7KhzD",
+        "sp_img": "https://i.scdn.co/image/ab67616d00001e025d3084ae51310ccb21ea7fa2",
+        "sp_artist_id": "2AvNtsTKAOkaoD7aonyHHJ",
+        "sp_popularity": 25,
+        "score": 70.667
+    },
+    {
+        "artist": "Einst\u00fcrzende Neubauten",
+        "title": "Alles in Allem",
+        "genre": "Pop/Rock",
+        "rating": 3.5,
+        "url": "https://www.allmusic.com/album/alles-in-allem-mw0003379770",
+        "source": "allmusic",
+        "sp_date": "2020-05-15T00:00.000Z",
+        "sp_album_id": "5GzPXmhp1ztLM8S0DqN8Gz",
+        "sp_img": "https://i.scdn.co/image/ab67616d00001e0230f9abd3990612e8ffa8b11d",
+        "sp_artist_id": "7KomCxZv6D5qCVvefwMnwB",
+        "sp_popularity": 50,
+        "score": 69.667
+    },
+    {
+        "artist": "Golden Retriever",
+        "title": "Rain Shadow",
+        "genre": "Electronic",
+        "rating": 4.0,
+        "url": "https://www.allmusic.com/album/rain-shadow-mw0003367415",
+        "source": "allmusic",
+        "sp_date": "2020-05-15T00:00.000Z",
+        "sp_album_id": "3qAaQWNHz3Iu23xk7xeaua",
+        "sp_img": "https://i.scdn.co/image/ab67616d00001e02e876f0461ae4d420944769bd",
+        "sp_artist_id": "726Y8qhG13nXVntQ85dQ4c",
+        "sp_popularity": 19,
+        "score": 69.467
+    },
+    {
+        "artist": "Thao & the Get Down Stay Down",
+        "title": "Temple",
+        "genre": "Pop/Rock",
+        "rating": 3.5,
+        "url": "https://www.allmusic.com/album/temple-mw0003368051",
+        "source": "allmusic",
+        "sp_date": "2020-05-15T00:00.000Z",
+        "sp_album_id": "3SYjUBg5uOq779VJh3jRb5",
+        "sp_img": "https://i.scdn.co/image/ab67616d00001e0268e9650e663a98a94d49b503",
+        "sp_artist_id": "2dn0CGCWvtrwZ66bOeLNb2",
+        "sp_popularity": 48,
+        "score": 69.267
     },
     {
         "artist": "Hanni el Khatib",
@@ -304,8 +430,22 @@
         "sp_album_id": "5TAGRaUl1smIoumjbUg0ZK",
         "sp_img": "https://i.scdn.co/image/ab67616d00001e0215a82aab396cfcb360dcb496",
         "sp_artist_id": "1HCdPZB0ypEcpDo4T55sMi",
-        "sp_popularity": 47,
-        "score": 70.733
+        "sp_popularity": 48,
+        "score": 69.267
+    },
+    {
+        "artist": "Chip Wickham",
+        "title": "Blue to Red",
+        "genre": "Jazz",
+        "rating": 4.0,
+        "url": "https://www.allmusic.com/album/blue-to-red-mw0003380254",
+        "source": "allmusic",
+        "sp_date": "2020-05-08T00:00.000Z",
+        "sp_album_id": "5Cd7BhlVvsUr8dFPkLQ1JC",
+        "sp_img": "https://i.scdn.co/image/ab67616d00001e02e9b5fd512a2583e029af4cb1",
+        "sp_artist_id": "62MkXCxcZ345tVUHsD9NK0",
+        "sp_popularity": 29,
+        "score": 69.133
     },
     {
         "artist": "El Michels Affair",
@@ -319,35 +459,7 @@
         "sp_img": "https://i.scdn.co/image/ab67616d00001e02ba575eeeb88d436e715c0242",
         "sp_artist_id": "0cLrgpG3pW4MX4nD8h6qCc",
         "sp_popularity": 58,
-        "score": 70.6
-    },
-    {
-        "artist": "Chip Wickham",
-        "title": "Blue to Red",
-        "genre": "Jazz",
-        "rating": 4.0,
-        "url": "https://www.allmusic.com/album/blue-to-red-mw0003380254",
-        "source": "allmusic",
-        "sp_date": "2020-05-08T00:00.000Z",
-        "sp_album_id": "5Cd7BhlVvsUr8dFPkLQ1JC",
-        "sp_img": "https://i.scdn.co/image/ab67616d00001e02e9b5fd512a2583e029af4cb1",
-        "sp_artist_id": "62MkXCxcZ345tVUHsD9NK0",
-        "sp_popularity": 28,
-        "score": 70.6
-    },
-    {
-        "artist": "Golden Retriever",
-        "title": "Rain Shadow",
-        "genre": "Electronic",
-        "rating": 4.0,
-        "url": "https://www.allmusic.com/album/rain-shadow-mw0003367415",
-        "source": "allmusic",
-        "sp_date": "2020-05-15T00:00.000Z",
-        "sp_album_id": "3qAaQWNHz3Iu23xk7xeaua",
-        "sp_img": "https://i.scdn.co/image/ab67616d00001e02e876f0461ae4d420944769bd",
-        "sp_artist_id": "726Y8qhG13nXVntQ85dQ4c",
-        "sp_popularity": 16,
-        "score": 70.533
+        "score": 68.933
     },
     {
         "artist": "Kaitlyn Aurelia Smith",
@@ -360,8 +472,8 @@
         "sp_album_id": "1vp1UaO7d7JE4poHbHuBVI",
         "sp_img": "https://i.scdn.co/image/ab67616d00001e0258d43aea500f1d032b6b1a99",
         "sp_artist_id": "6P86FLVAK4sxu8OhyQJBvH",
-        "sp_popularity": 45,
-        "score": 70.333
+        "sp_popularity": 46,
+        "score": 68.867
     },
     {
         "artist": "Beauty Pill",
@@ -375,21 +487,77 @@
         "sp_img": "https://i.scdn.co/image/ab67616d00001e02ebfa68e4dce781ab107b33e0",
         "sp_artist_id": "1S6tHqeTm8aqnjL4rGqAhm",
         "sp_popularity": 26,
-        "score": 70.2
+        "score": 68.533
     },
     {
-        "artist": "Stroppies",
-        "title": "Look Alive",
+        "artist": "Woods",
+        "title": "Strange to Explain",
+        "genre": "Pop/Rock",
+        "rating": 4.5,
+        "url": "https://www.allmusic.com/album/strange-to-explain-mw0003365059",
+        "source": "allmusic",
+        "sp_date": "2020-04-07T00:00.000Z",
+        "sp_album_id": "4UDLYSIwuVm5Nf0IDLCsDt",
+        "sp_img": "https://i.scdn.co/image/ab67616d00001e024ff4f5de6e5a42ae78f1763f",
+        "sp_artist_id": "2sBPVEeMBXKNsZtYaJixnJ",
+        "sp_popularity": 47,
+        "score": 68.4
+    },
+    {
+        "artist": "Tim Burgess",
+        "title": "I Love the New Sky",
+        "genre": "Pop/Rock",
+        "rating": 3.5,
+        "url": "https://www.allmusic.com/album/i-love-the-new-sky-mw0003358528",
+        "source": "allmusic",
+        "sp_date": "2020-05-22T00:00.000Z",
+        "sp_album_id": "1LyICUcYBnCHlAJePa8IMC",
+        "sp_img": "https://i.scdn.co/image/ab67616d00001e0217f9ce4e694e891df011e140",
+        "sp_artist_id": "1goerABWhGQPWKhMCZeJ68",
+        "sp_popularity": 32,
+        "score": 68.4
+    },
+    {
+        "artist": "Asking Alexandria",
+        "title": "Like a House on Fire",
+        "genre": "Pop/Rock",
+        "rating": 3.0,
+        "url": "https://www.allmusic.com/album/like-a-house-on-fire-mw0003373406",
+        "source": "allmusic",
+        "sp_date": "2020-05-15T00:00.000Z",
+        "sp_album_id": "5VKKXDvYuJmRc2UQHCwNQK",
+        "sp_img": "https://i.scdn.co/image/ab67616d00001e02d30ebbcdf987ab5273abdd8d",
+        "sp_artist_id": "1caBfBEapzw8z2Qz9q0OaQ",
+        "sp_popularity": 72,
+        "score": 68.067
+    },
+    {
+        "artist": "Brigid Dawson and the Mothers Network",
+        "title": "Ballet of Apes",
         "genre": "Pop/Rock",
         "rating": 4.0,
-        "url": "https://www.allmusic.com/album/look-alive-mw0003366643",
+        "url": "https://www.allmusic.com/album/ballet-of-apes-mw0003378017",
         "source": "allmusic",
-        "sp_date": "2020-05-06T00:00.000Z",
-        "sp_album_id": "48f2uB2lKCml63RJXa79ad",
-        "sp_img": "https://i.scdn.co/image/ab67616d00001e02586d12e1328a17d6c8bd1b2e",
-        "sp_artist_id": "6r5Oeuk1Jrn6TxkwcZVXYY",
-        "sp_popularity": 29,
-        "score": 70.133
+        "sp_date": "2020-05-22T00:00.000Z",
+        "sp_album_id": "6idL156uolA1BkP1nduQfn",
+        "sp_img": "https://i.scdn.co/image/ab67616d00001e023c2d47b99438c1df4b29cd67",
+        "sp_artist_id": "19haL8PgVQHfepTx7nwqFe",
+        "sp_popularity": 0,
+        "score": 68.0
+    },
+    {
+        "artist": "Kidbug",
+        "title": "Kidbug",
+        "genre": "Pop/Rock",
+        "rating": 4.0,
+        "url": "https://www.allmusic.com/album/kidbug-mw0003362024",
+        "source": "allmusic",
+        "sp_date": "2020-05-13T00:00.000Z",
+        "sp_album_id": "3DHVjAa79VEQEFTJPnetgb",
+        "sp_img": "https://i.scdn.co/image/ab67616d00001e021eda25e2c0aa6d799ef84aca",
+        "sp_artist_id": "1SEaMEfbn1R23807Xhp4Kf",
+        "sp_popularity": 14,
+        "score": 67.8
     },
     {
         "artist": "The Dears",
@@ -402,8 +570,22 @@
         "sp_album_id": "0CGpYxkiGUmxhIUv0bU4yK",
         "sp_img": "https://i.scdn.co/image/ab67616d00001e02563890d5af9bbe3892000483",
         "sp_artist_id": "2qljmykdCfgGy9zUw7UqkX",
+        "sp_popularity": 39,
+        "score": 67.467
+    },
+    {
+        "artist": "Jess Williamson",
+        "title": "Sorceress",
+        "genre": "Pop/Rock",
+        "rating": 3.5,
+        "url": "https://www.allmusic.com/album/sorceress-mw0003363954",
+        "source": "allmusic",
+        "sp_date": "2020-05-15T00:00.000Z",
+        "sp_album_id": "4PFQNELzkJ1AFwb9GsQc26",
+        "sp_img": "https://i.scdn.co/image/ab67616d00001e0200503844fbc86b527f6e133b",
+        "sp_artist_id": "784kOgkd1H6jU4KgPMYHi9",
         "sp_popularity": 37,
-        "score": 68.733
+        "score": 67.067
     },
     {
         "artist": "Ruthie Foster",
@@ -416,36 +598,8 @@
         "sp_album_id": "4WpmLRfmXFom0gjfLb9FWG",
         "sp_img": "https://i.scdn.co/image/ab67616d00001e02f5552aebde0f6dd63995f1e7",
         "sp_artist_id": "2lL4ckeM1A2Qo2Fe64dP0F",
-        "sp_popularity": 36,
-        "score": 68.533
-    },
-    {
-        "artist": "Chicano Batman",
-        "title": "Invisible People",
-        "genre": "Pop/Rock",
-        "rating": 3.5,
-        "url": "https://www.allmusic.com/album/invisible-people-mw0003362995",
-        "source": "allmusic",
-        "sp_date": "2020-05-01T00:00.000Z",
-        "sp_album_id": "2sS14o33EFyvcUPu2dfPOT",
-        "sp_img": "https://i.scdn.co/image/ab67616d00001e02943d9325c71f05330ac89ce2",
-        "sp_artist_id": "0LklyUMMUhpIjMgYHlV0hN",
-        "sp_popularity": 59,
-        "score": 68.467
-    },
-    {
-        "artist": "Damien Jurado",
-        "title": "What's New, Tomboy?",
-        "genre": "Pop/Rock",
-        "rating": 3.5,
-        "url": "https://www.allmusic.com/album/whats-new-tomboy-mw0003365049",
-        "source": "allmusic",
-        "sp_date": "2020-05-01T00:00.000Z",
-        "sp_album_id": "0ImURqKkKAYcG9i9atOMSp",
-        "sp_img": "https://i.scdn.co/image/ab67616d00001e023b46173af687b01d50802d64",
-        "sp_artist_id": "79JJCxCCfJ8HufX6w8q2k4",
-        "sp_popularity": 58,
-        "score": 68.267
+        "sp_popularity": 37,
+        "score": 67.067
     },
     {
         "artist": "Butch Walker",
@@ -459,35 +613,7 @@
         "sp_img": "https://i.scdn.co/image/ab67616d00001e0212de2f32dfd45cd16da1be77",
         "sp_artist_id": "7qKoy46vPnmIxKCN6ewBG4",
         "sp_popularity": 46,
-        "score": 68.2
-    },
-    {
-        "artist": "Jess Williamson",
-        "title": "Sorceress",
-        "genre": "Pop/Rock",
-        "rating": 3.5,
-        "url": "https://www.allmusic.com/album/sorceress-mw0003363954",
-        "source": "allmusic",
-        "sp_date": "2020-05-15T00:00.000Z",
-        "sp_album_id": "4PFQNELzkJ1AFwb9GsQc26",
-        "sp_img": "https://i.scdn.co/image/ab67616d00001e0200503844fbc86b527f6e133b",
-        "sp_artist_id": "784kOgkd1H6jU4KgPMYHi9",
-        "sp_popularity": 34,
-        "score": 68.133
-    },
-    {
-        "artist": "John Carroll Kirby",
-        "title": "My Garden",
-        "genre": "Pop/Rock",
-        "rating": 4.0,
-        "url": "https://www.allmusic.com/album/my-garden-mw0003350989",
-        "source": "allmusic",
-        "sp_date": "2020-04-24T00:00.000Z",
-        "sp_album_id": "17fhapDqpABZuBnfydgrJD",
-        "sp_img": "https://i.scdn.co/image/ab67616d00001e02a32610bc3dc8bdcd5c576b4e",
-        "sp_artist_id": "7FQiZr787umw7P5dO3zqld",
-        "sp_popularity": 39,
-        "score": 68.133
+        "score": 66.533
     },
     {
         "artist": "Porcelain Raft",
@@ -500,8 +626,8 @@
         "sp_album_id": "17Ku9PmJZ5z33QVNH4RYh2",
         "sp_img": "https://i.scdn.co/image/ab67616d00001e02759782a0f770113f056ad07c",
         "sp_artist_id": "0l5fDpqfSweuzhaAtWa76A",
-        "sp_popularity": 32,
-        "score": 67.733
+        "sp_popularity": 34,
+        "score": 66.467
     },
     {
         "artist": "Josey Rebelle",
@@ -514,8 +640,8 @@
         "sp_album_id": "6v1Nilz6moJBaC5o3aXzi2",
         "sp_img": "https://i.scdn.co/image/ab67616d00001e02d6b6546b74979e77bf115cbe",
         "sp_artist_id": "4M9tKwx3n9pIBszhn1pmkH",
-        "sp_popularity": 1,
-        "score": 67.533
+        "sp_popularity": 4,
+        "score": 66.467
     },
     {
         "artist": "Willie Nile",
@@ -528,134 +654,36 @@
         "sp_album_id": "01JagZ3zulINvlriaUf0NN",
         "sp_img": "https://i.scdn.co/image/ab67616d00001e023c63e0c789029738366d1260",
         "sp_artist_id": "42chtGdwnAdG2TECndse7J",
-        "sp_popularity": 31,
-        "score": 67.533
-    },
-    {
-        "artist": "Devon Williams",
-        "title": "Tear In the Fabric",
-        "genre": "Pop/Rock",
-        "rating": 4.0,
-        "url": "https://www.allmusic.com/album/tear-in-the-fabric-mw0003368980",
-        "source": "allmusic",
-        "sp_date": "2020-05-01T00:00.000Z",
-        "sp_album_id": "2VvgQh6VHGdlPWw7vFjtQm",
-        "sp_img": "https://i.scdn.co/image/ab67616d00001e02aaa181ca394421341ed7ccc5",
-        "sp_artist_id": "6HARLjOsKxuYvgJjy2sMKO",
-        "sp_popularity": 23,
-        "score": 67.267
-    },
-    {
-        "artist": "BOAT",
-        "title": "Tread Lightly",
-        "genre": "Pop/Rock",
-        "rating": 4.0,
-        "url": "https://www.allmusic.com/album/tread-lightly-mw0003377827",
-        "source": "allmusic",
-        "sp_date": "2020-05-01T00:00.000Z",
-        "sp_album_id": "2Thzy2Hc3SeRRbzGUdg72s",
-        "sp_img": "https://i.scdn.co/image/ab67616d00001e026c5f2083eada48715ecd592d",
-        "sp_artist_id": "7M3a7BPGoWXciQUx5kfz3e",
-        "sp_popularity": 23,
-        "score": 67.267
-    },
-    {
-        "artist": "American Aquarium",
-        "title": "Lamentations",
-        "genre": "Pop/Rock",
-        "rating": 3.5,
-        "url": "https://www.allmusic.com/album/lamentations-mw0003366302",
-        "source": "allmusic",
-        "sp_date": "2020-05-01T00:00.000Z",
-        "sp_album_id": "16cNE8Er5s7OeJAe0Ki3vC",
-        "sp_img": "https://i.scdn.co/image/ab67616d00001e0220550b203c8e9be067e62231",
-        "sp_artist_id": "7nSYcucRT6IGiMepEmiZgT",
-        "sp_popularity": 51,
-        "score": 66.867
-    },
-    {
-        "artist": "Man Man",
-        "title": "Dream Hunting in the Valley of the In-Between",
-        "genre": "Pop/Rock",
-        "rating": 3.5,
-        "url": "https://www.allmusic.com/album/dream-hunting-in-the-valley-of-the-in-between-mw0003367404",
-        "source": "allmusic",
-        "sp_date": "2020-05-01T00:00.000Z",
-        "sp_album_id": "7pus9stm2bEyhG71TG0IAa",
-        "sp_img": "https://i.scdn.co/image/ab67616d00001e02aa25e787394d70771d064790",
-        "sp_artist_id": "0zprAu7NrzRehc0Q0Jc7mL",
-        "sp_popularity": 50,
-        "score": 66.667
-    },
-    {
-        "artist": "Hala",
-        "title": "Red Herring",
-        "genre": "Pop/Rock",
-        "rating": 3.5,
-        "url": "https://www.allmusic.com/album/red-herring-mw0003368437",
-        "source": "allmusic",
-        "sp_date": "2020-05-01T00:00.000Z",
-        "sp_album_id": "45Vu1IeIky2HL6w7R2UsRv",
-        "sp_img": "https://i.scdn.co/image/ab67616d00001e02568c7bfe07163dfff82ac778",
-        "sp_artist_id": "1dTBAtLZBUB8Ir4PmJYw9t",
-        "sp_popularity": 49,
-        "score": 66.467
-    },
-    {
-        "artist": "Joan as Police Woman",
-        "title": "Cover Two",
-        "genre": "Pop/Rock",
-        "rating": 3.5,
-        "url": "https://www.allmusic.com/album/cover-two-mw0003360363",
-        "source": "allmusic",
-        "sp_date": "2020-05-01T00:00.000Z",
-        "sp_album_id": "14ryj2ZqsyytYNTsSRuLX6",
-        "sp_img": "https://i.scdn.co/image/ab67616d00001e02732a2fb6a4242e938c604f46",
-        "sp_artist_id": "6PBv8t9YTLggA9ZMwpeoqj",
-        "sp_popularity": 48,
+        "sp_popularity": 33,
         "score": 66.267
     },
     {
-        "artist": "Klara Lewis",
-        "title": "Ingrid",
-        "genre": "Avant-Garde",
-        "rating": 4.0,
-        "url": "https://www.allmusic.com/album/ingrid-mw0003366686",
-        "source": "allmusic",
-        "sp_date": "2020-05-01T00:00.000Z",
-        "sp_album_id": "7renot42MHAlSDvO2NbmYG",
-        "sp_img": "https://i.scdn.co/image/ab67616d00001e02fc8c58e076b06e091d2976e3",
-        "sp_artist_id": "0kyeczWICSebymos0FqJvt",
-        "sp_popularity": 16,
-        "score": 65.867
-    },
-    {
-        "artist": "Happyness",
-        "title": "Floatr",
+        "artist": "Eve Owen",
+        "title": "Don't Let the Ink Dry",
         "genre": "Pop/Rock",
         "rating": 3.5,
-        "url": "https://www.allmusic.com/album/floatr-mw0003367870",
+        "url": "https://www.allmusic.com/album/dont-let-the-ink-dry-mw0003357199",
         "source": "allmusic",
-        "sp_date": "2020-05-01T00:00.000Z",
-        "sp_album_id": "0HQX0uEli8pgJPzY8j6hGy",
-        "sp_img": "https://i.scdn.co/image/ab67616d00001e0214ec02baaa24a8bdc76b5a18",
-        "sp_artist_id": "4nddgNqdf0SFeeqhbDN6rN",
-        "sp_popularity": 43,
-        "score": 65.267
+        "sp_date": "2020-05-08T00:00.000Z",
+        "sp_album_id": "1ceVlojqwgJjJUQFia6k16",
+        "sp_img": "https://i.scdn.co/image/ab67616d00001e028c0d76b09920b41f0a686d28",
+        "sp_artist_id": "5K9H52DBfvfMzrskJkU4An",
+        "sp_popularity": 42,
+        "score": 65.733
     },
     {
-        "artist": "Ital Tek",
-        "title": "Outland",
-        "genre": "Electronic",
-        "rating": 3.5,
-        "url": "https://www.allmusic.com/album/outland-mw0003368977",
+        "artist": "Josef Salvat",
+        "title": "modern anxiety.",
+        "genre": "Pop/Rock",
+        "rating": 3.0,
+        "url": "https://www.allmusic.com/album/modern-anxiety-mw0003372431",
         "source": "allmusic",
-        "sp_date": "2020-05-01T00:00.000Z",
-        "sp_album_id": "2xVQGGbx2T5ow3F71Ywrtf",
-        "sp_img": "https://i.scdn.co/image/ab67616d00001e020d6d30a0d457f64236e2d616",
-        "sp_artist_id": "6Auo6gEPwhb9aZindgVpZJ",
-        "sp_popularity": 40,
-        "score": 64.667
+        "sp_date": "2020-05-15T00:00.000Z",
+        "sp_album_id": "1PlxQCLGJer3ii1mQ89Fy5",
+        "sp_img": "https://i.scdn.co/image/ab67616d00001e0267554f995d38a02e8f340d62",
+        "sp_artist_id": "64PJHZDQTPPVBCdwnv22Wz",
+        "sp_popularity": 56,
+        "score": 64.867
     },
     {
         "artist": "Modern Studies",
@@ -669,21 +697,7 @@
         "sp_img": "https://i.scdn.co/image/ab67616d00001e027f470513d68675fdc4e06120",
         "sp_artist_id": "2ige11rdVKinc21Zpr5lb8",
         "sp_popularity": 26,
-        "score": 64.2
-    },
-    {
-        "artist": "Field Works",
-        "title": "Ultrasonic",
-        "genre": "Electronic",
-        "rating": 4.0,
-        "url": "https://www.allmusic.com/album/ultrasonic-mw0003358271",
-        "source": "allmusic",
-        "sp_date": "2020-05-01T00:00.000Z",
-        "sp_album_id": "5pJLTSGYfTkCnXdcz9Dfyt",
-        "sp_img": "https://i.scdn.co/image/ab67616d00001e027f110c57d35c10e6cc63dce6",
-        "sp_artist_id": "0LyfQWJT6nXafLPZqxe9Of",
-        "sp_popularity": 0,
-        "score": 62.667
+        "score": 62.533
     },
     {
         "artist": "Choir Boy",
@@ -696,22 +710,22 @@
         "sp_album_id": "3VO4Fu1NTkAadM3usPlXnW",
         "sp_img": "https://i.scdn.co/image/ab67616d00001e02593f70a7ff3400fcb215ed8b",
         "sp_artist_id": "2EvEdhJhS6JhayAsJZyAyL",
-        "sp_popularity": 47,
-        "score": 62.4
+        "sp_popularity": 48,
+        "score": 60.933
     },
     {
-        "artist": "Houses of Heaven",
-        "title": "Silent Places",
+        "artist": "Darren Hayman",
+        "title": "Home Time",
         "genre": "Pop/Rock",
-        "rating": 3.5,
-        "url": "https://www.allmusic.com/album/silent-places-mw0003366627",
+        "rating": 3.0,
+        "url": "https://www.allmusic.com/album/home-time-mw0003376765",
         "source": "allmusic",
-        "sp_date": "2020-05-01T00:00.000Z",
-        "sp_album_id": "1U7IzoOLlrQKyCraDK0tOr",
-        "sp_img": "https://i.scdn.co/image/ab67616d00001e0289c7088ebc0b77204690a497",
-        "sp_artist_id": "0IR8xlqcSRQShBhCebrdiv",
-        "sp_popularity": 21,
-        "score": 60.867
+        "sp_date": "2020-05-22T00:00.000Z",
+        "sp_album_id": "2jLl5sxFfczx7Q1NGcYC3M",
+        "sp_img": "https://i.scdn.co/image/ab67616d00001e027fe6f9392d8571e99bc9f233",
+        "sp_artist_id": "7z1zIVirda43ep7aMRkXYH",
+        "sp_popularity": 23,
+        "score": 60.6
     },
     {
         "artist": "Diane Schuur",
@@ -725,35 +739,21 @@
         "sp_img": "https://i.scdn.co/image/ab67616d00001e026aee1142fb41ed7513f26f49",
         "sp_artist_id": "3YowTUlFJJA6E5Yd67GZNv",
         "sp_popularity": 38,
-        "score": 60.6
+        "score": 58.933
     },
     {
-        "artist": "Johanna Warren",
-        "title": "Chaotic Good",
+        "artist": "Badly Drawn Boy",
+        "title": "Banana Skin Shoes",
         "genre": "Pop/Rock",
-        "rating": 3.0,
-        "url": "https://www.allmusic.com/album/chaotic-good-mw0003359843",
+        "rating": 4.0,
+        "url": "https://www.allmusic.com/album/banana-skin-shoes-mw0003369985",
         "source": "allmusic",
-        "sp_date": "2020-05-01T00:00.000Z",
-        "sp_album_id": "5k4HEcYp1adly3U1Sx3sFP",
-        "sp_img": "https://i.scdn.co/image/ab67616d00001e02ec16b745cdd878b7597dec6d",
-        "sp_artist_id": "2K5c4N7j15hUwrvv0ejlvV",
-        "sp_popularity": 40,
-        "score": 58.667
-    },
-    {
-        "artist": "Caleb Landry Jones",
-        "title": "The Mother Stone",
-        "genre": "Pop/Rock",
-        "rating": 3.0,
-        "url": "https://www.allmusic.com/album/the-mother-stone-mw0003358278",
-        "source": "allmusic",
-        "sp_date": "2020-05-01T00:00.000Z",
-        "sp_album_id": "0dLhoomGBGqOt40K7feMH8",
-        "sp_img": "https://i.scdn.co/image/ab67616d00001e02e5e6608fdd78563ce8088066",
-        "sp_artist_id": "736HHrEfkWjQB7zYV2aeXV",
-        "sp_popularity": 33,
-        "score": 57.267
+        "sp_date": "2020-03-20T00:00.000Z",
+        "sp_album_id": "3W89q2zlLqos3RT8lIVu2x",
+        "sp_img": "https://i.scdn.co/image/ab67616d00001e02e2ef62c9f1b742261187fba6",
+        "sp_artist_id": "244fcyNSuyhbRlMGfMbYrO",
+        "sp_popularity": 52,
+        "score": 58.4
     },
     {
         "artist": "Bang on a Can All-Stars",
@@ -767,6 +767,34 @@
         "sp_img": "https://i.scdn.co/image/ab67616d00001e02a394981e2b5e8f95ea71a869",
         "sp_artist_id": "1WN9bXZmI41JB1tCmrSC3M",
         "sp_popularity": 44,
-        "score": 53.8
+        "score": 52.133
+    },
+    {
+        "artist": "Jetstream Pony",
+        "title": "Jetstream Pony",
+        "genre": "Pop/Rock",
+        "rating": 3.5,
+        "url": "https://www.allmusic.com/album/jetstream-pony-mw0003370842",
+        "source": "allmusic",
+        "sp_date": "2020-04-12T00:00.000Z",
+        "sp_album_id": "56ZR6mt51EqVPcJ2sscScg",
+        "sp_img": "https://i.scdn.co/image/ab67616d00001e02b41d27ae67122c1531250951",
+        "sp_artist_id": "6yOJiA8ct3DCwL0tAt2xr1",
+        "sp_popularity": 12,
+        "score": 51.067
+    },
+    {
+        "artist": "The Sonic Dawn",
+        "title": "Enter the Mirage",
+        "genre": "Pop/Rock",
+        "rating": 2.5,
+        "url": "https://www.allmusic.com/album/enter-the-mirage-mw0003347157",
+        "source": "allmusic",
+        "sp_date": "2020-05-01T00:00.000Z",
+        "sp_album_id": "5gUDUwvHRfPF3qlrfOaORS",
+        "sp_img": "https://i.scdn.co/image/ab67616d00001e02e9eb451ea189f8943a4e2328",
+        "sp_artist_id": "0qCSLDFoRtGoaHHSxfuMay",
+        "sp_popularity": 26,
+        "score": 48.2
     }
 ]

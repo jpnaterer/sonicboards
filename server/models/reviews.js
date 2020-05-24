@@ -9,7 +9,7 @@ const ReviewsSchema = new mongoose.Schema({
     rating: Number,
     url: String,
     source: String,
-    sp_date: String,
+    sp_date: Date,
     sp_album_id: String,
     sp_img: String,
     sp_artist_id: String,
