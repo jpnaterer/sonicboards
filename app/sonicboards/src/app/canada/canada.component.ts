@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
 import { trigger, style, animate, transition } from '@angular/animations';
 import { environment } from 'src/environments/environment';
+import { NgbDate, NgbCalendar, NgbDateParserFormatter } from '@ng-bootstrap/ng-bootstrap';
 
 interface album {
   genre: string,
@@ -35,6 +36,8 @@ export class CanadaComponent implements OnInit {
   genre_flag = false; navbarOpen = false; allow_search = true;
   toronto_data = []; montreal_data = []; bc_data = []; prairies_data = [];
   ontario_data = []; quebec_data = []; atlantic_data = []; custom_data = [];
+  hoveredDate: NgbDate | null = null;
+  fromDate: NgbDate | null; toDate: NgbDate | null;
 
   // Dict storing the values of the custom region search buttons.
   sr_dict = {'sr-ab': true, 'sr-bc': true, 'sr-mn': true,
@@ -55,9 +58,42 @@ export class CanadaComponent implements OnInit {
   QUEBEC_TAGS = ['montreal', 'quebec']
   ATLANTIC_TAGS = ['newfoundland', 'novascotia', 'newbrunswick', 'pei']
 
-  constructor(private httpClient: HttpClient) { }
+  constructor(private httpClient: HttpClient, private calendar: NgbCalendar, 
+    public formatter: NgbDateParserFormatter) { 
+    this.fromDate = calendar.getPrev(calendar.getToday(), 'd', 30);
+    this.toDate = calendar.getToday();
+  }
 
-  toggleNavbar() { this.navbarOpen = !this.navbarOpen; }
+  onDateSelection(date: NgbDate) {
+    if (!this.fromDate && !this.toDate) {
+      this.fromDate = date;
+    } else if (this.fromDate && !this.toDate && date && date.after(this.fromDate)) {
+      this.toDate = date;
+    } else {
+      this.toDate = null; this.fromDate = date;
+    }
+  }
+
+  isHovered(date: NgbDate) {
+    return this.fromDate && !this.toDate && this.hoveredDate && 
+      date.after(this.fromDate) && date.before(this.hoveredDate);
+  }
+
+  isInside(date: NgbDate) {
+    return this.toDate && date.after(this.fromDate) && 
+      date.before(this.toDate);
+  }
+
+  isRange(date: NgbDate) {
+    return date.equals(this.fromDate) || (this.toDate && 
+      date.equals(this.toDate)) || this.isInside(date) || this.isHovered(date);
+  }
+
+  validateInput(currentValue: NgbDate | null, input: string): NgbDate | null {
+    const parsed = this.formatter.parse(input);
+    return parsed && this.calendar.isValid(NgbDate.from(parsed)) ? 
+      NgbDate.from(parsed) : currentValue;
+  }
 
   // Toggle Genres button.
   onGenClick(event) {
@@ -115,7 +151,6 @@ export class CanadaComponent implements OnInit {
   // On Custom Search button. Prevent rapid button clicks.
   onSeaClick(event) {
     if (this.allow_search){
-
       // Create an array which stores the genres to query based on buttons.
       var genres_to_query = []
       if(this.sg_dict['sg-ac']) { genres_to_query.push('acoustic') }
@@ -156,8 +191,9 @@ export class CanadaComponent implements OnInit {
 
       this.httpClient
       .post(this.node_serve_url + '/api/canada', { 
-        genres: genres_to_query, regions: regions_to_query})
-      .subscribe((data : Array<Object>)=> { this.custom_data = data })
+        genres: genres_to_query, regions: regions_to_query, 
+        start_date: this.fromDate, end_date: this.toDate})
+      .subscribe((data : Array<Array<Object>>)=> { this.custom_data = data[0] })
 
       this.allow_search = false
       setTimeout(() => { this.allow_search = true }, 2000)
@@ -171,39 +207,20 @@ export class CanadaComponent implements OnInit {
     }else{ this.node_serve_url = "http://localhost:3000" }
     
     this.httpClient
-    .post(this.node_serve_url + '/api/canada', {regions: ['toronto']})
-    .subscribe((data : Array<Object>)=> { 
-      this.preloadImages(data); this.toronto_data = data })
-
-    this.httpClient
-    .post(this.node_serve_url + '/api/canada', {regions: ['montreal']})
-    .subscribe((data : Array<Object>)=> { 
-      this.preloadImages(data); this.montreal_data = data })
-
-    this.httpClient
-    .post(this.node_serve_url + '/api/canada', {regions: this.BC_TAGS})
-    .subscribe((data : Array<Object>)=> { 
-      this.preloadImages(data); this.bc_data = data })
-
-    this.httpClient
-    .post(this.node_serve_url + '/api/canada', {regions: this.PRAIRIE_TAGS})
-    .subscribe((data : Array<Object>)=> { 
-      this.preloadImages(data); this.prairies_data = data })
-
-    this.httpClient
-    .post(this.node_serve_url + '/api/canada', {regions: this.ONTARIO_TAGS})
-    .subscribe((data : Array<Object>)=> { 
-      this.preloadImages(data); this.ontario_data = data })
-    
-    this.httpClient
-    .post(this.node_serve_url + '/api/canada', {regions: this.QUEBEC_TAGS})
-    .subscribe((data : Array<Object>)=> { 
-      this.preloadImages(data); this.quebec_data = data })
-
-    this.httpClient
-    .post(this.node_serve_url + '/api/canada', {regions: this.ATLANTIC_TAGS})
-    .subscribe((data : Array<Object>)=> { 
-      this.preloadImages(data); this.atlantic_data = data })
+    .post(this.node_serve_url + '/api/canada', [{regions: ['toronto']}, 
+      {regions: ['montreal']}, {regions: this.BC_TAGS}, 
+      {regions: this.PRAIRIE_TAGS}, {regions: this.ONTARIO_TAGS},
+      {regions: this.QUEBEC_TAGS}, {regions: this.ATLANTIC_TAGS}])
+    .subscribe((data : Array<Array<Object>>)=> { 
+      this.preloadImages([].concat.apply([], data)); 
+      this.toronto_data = data[0];
+      this.montreal_data = data[1];
+      this.bc_data = data[2];
+      this.prairies_data = data[3];
+      this.ontario_data = data[4];
+      this.quebec_data = data[5];
+      this.atlantic_data = data[6];
+    })
 
     this.httpClient
     .post(this.node_serve_url + '/api/config', {})

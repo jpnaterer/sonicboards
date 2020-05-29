@@ -2,7 +2,7 @@
     <a class="navbar-brand" href="#" 
         style="font-family: 'Roboto Slab', serif;">SONICBOARDS</a>
     <button class="navbar-toggler" type="button"
-            (click)="toggleNavbar()">
+            (click)="navbarOpen = !navbarOpen">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" [ngClass]="{ 'show': navbarOpen }">

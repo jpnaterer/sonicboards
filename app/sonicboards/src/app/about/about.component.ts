@@ -15,8 +15,6 @@ export class AboutComponent implements OnInit {
 
   constructor(private httpClient: HttpClient) { }
 
-  toggleNavbar() { this.navbarOpen = !this.navbarOpen; }
-
   ngOnInit(): void {
     // Setup backend connection. Https connection if in production mode.
     if(environment.production){

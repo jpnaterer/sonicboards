@@ -34,8 +34,6 @@ export class ReviewComponent implements OnInit {
 
   constructor(private httpClient: HttpClient){}
 
-  toggleNavbar() { this.navbarOpen = !this.navbarOpen; }
-
   // Toggle Genres button.
   onGenClick(event) {
     var text = event.target.textContent
@@ -59,7 +57,7 @@ export class ReviewComponent implements OnInit {
       this.node_serve_url = "https://sonicboards.com:3000"
     }else{ this.node_serve_url = "http://localhost:3000" }
 
-    this.httpClient
+    /*this.httpClient
     .post(this.node_serve_url + '/api/reviews', {source: 'pitchfork'})
     .subscribe((data : Array<Object>)=> { 
       this.preloadImages(data); this.pitchfork_data = data })
@@ -67,7 +65,16 @@ export class ReviewComponent implements OnInit {
     this.httpClient
     .post(this.node_serve_url + '/api/reviews', {source: 'allmusic'})
     .subscribe((data : Array<Object>)=> { 
-      this.preloadImages(data); this.allmusic_data = data })
+      this.preloadImages(data); this.allmusic_data = data })*/
+
+    this.httpClient
+    .post(this.node_serve_url + '/api/reviews', 
+      [{source: 'pitchfork'}, {source: 'allmusic'}])
+    .subscribe((data : Array<Array<Object>>)=> { 
+      this.preloadImages([].concat.apply([], data)); 
+      this.pitchfork_data = data[0];
+      this.allmusic_data = data[1];
+    })
 
     this.httpClient
     .post(this.node_serve_url + '/api/config', {})
