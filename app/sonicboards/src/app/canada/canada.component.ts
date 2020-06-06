@@ -31,7 +31,7 @@ interface album {
 export class CanadaComponent implements OnInit {
 
   node_serve_url = '';
-  current_tab = 'toronto';
+  current_tab = '';
   date_stamp_str = '';
   genre_flag = false; navbarOpen = false; allow_search = true;
   toronto_data = []; montreal_data = []; bc_data = []; prairies_data = [];
@@ -220,6 +220,7 @@ export class CanadaComponent implements OnInit {
       this.ontario_data = data[4];
       this.quebec_data = data[5];
       this.atlantic_data = data[6];
+      this.current_tab = 'toronto';
     })
 
     this.httpClient

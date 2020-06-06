@@ -1,6 +1,8 @@
 # frontend/backend
 **/dist
 **/node_modules
+**/.env
+request.rest
 
 # python
 scripts/__pycache__

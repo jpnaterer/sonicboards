@@ -1,17 +1,59 @@
 [
     {
-        "artist": "Perfume Genius",
-        "title": "Set My Heart on Fire Immediately",
-        "genre": "Pop/R&B",
-        "rating": 9.0,
-        "url": "https://pitchfork.com/reviews/albums/perfume-genius-set-my-heart-on-fire-immediately/",
+        "artist": "Run the Jewels",
+        "title": "RTJ4",
+        "genre": "Rap",
+        "rating": 8.3,
+        "url": "https://pitchfork.com/reviews/albums/run-the-jewels-rtj4/",
         "source": "pitchfork",
-        "sp_date": "2020-05-15T00:00.000Z",
-        "sp_album_id": "6daEdTBi1hyFQgmsnR7oRr",
-        "sp_img": "https://i.scdn.co/image/ab67616d00001e029af34850f5125ef195d6101a",
-        "sp_artist_id": "2ueoLVCXQ948OfhVvAy3Nn",
-        "sp_popularity": 67,
-        "score": 82.733
+        "sp_date": "2020-06-03T00:00.000Z",
+        "sp_album_id": "6cx4GVNs03Pu4ZczRnWiLd",
+        "sp_img": "https://i.scdn.co/image/ab67616d00001e02edfb51800f20fbf8c465759e",
+        "sp_artist_id": "4RnBFZRiMLRyZy0AzzTg2C",
+        "sp_popularity": 75,
+        "score": 83.8
+    },
+    {
+        "artist": "Iggy Pop",
+        "title": "The Bowie Years",
+        "genre": "Rock",
+        "rating": 8.6,
+        "url": "https://pitchfork.com/reviews/albums/iggy-pop-the-bowie-years/",
+        "source": "pitchfork",
+        "sp_date": "2020-05-29T00:00.000Z",
+        "sp_album_id": "0WmnKeWRm6VplwYaTZ5ks5",
+        "sp_img": "https://i.scdn.co/image/ab67616d00001e026c99c242e31987a38b6b6c7b",
+        "sp_artist_id": "33EUXrFKGjpUSGacqEHhU4",
+        "sp_popularity": 68,
+        "score": 82.533
+    },
+    {
+        "artist": "Freddie Gibbs",
+        "title": "Alfredo",
+        "genre": "Rap",
+        "rating": 8.0,
+        "url": "https://pitchfork.com/reviews/albums/freddie-gibbs-the-alchemist-alfredo/",
+        "source": "pitchfork",
+        "sp_date": "2020-05-29T00:00.000Z",
+        "sp_album_id": "3znl1qe13kyjQv7KcR685N",
+        "sp_img": "https://i.scdn.co/image/ab67616d00001e0252c24049a16d59e98a638651",
+        "sp_artist_id": "0Y4inQK6OespitzD6ijMwb",
+        "sp_popularity": 74,
+        "score": 80.133
+    },
+    {
+        "artist": "Lady Gaga",
+        "title": "Chromatica",
+        "genre": "Pop/R&B",
+        "rating": 7.3,
+        "url": "https://pitchfork.com/reviews/albums/lady-gaga-chromatica/",
+        "source": "pitchfork",
+        "sp_date": "2020-05-29T00:00.000Z",
+        "sp_album_id": "05c49JgPmL4Uz2ZeqRx5SP",
+        "sp_img": "https://i.scdn.co/image/ab67616d00001e026040effba89b9b00a6f6743a",
+        "sp_artist_id": "1HY2Jd0NmPuamShAr6KMms",
+        "sp_popularity": 95,
+        "score": 80.133
     },
     {
         "artist": "The 1975",
@@ -25,21 +67,21 @@
         "sp_img": "https://i.scdn.co/image/ab67616d00001e024400af0debecb047939c9254",
         "sp_artist_id": "3mIj9lX2MWuHmhNCA7LSCW",
         "sp_popularity": 85,
-        "score": 82.667
+        "score": 80.0
     },
     {
-        "artist": "Moses Sumney",
-        "title": "gr\u00e6",
-        "genre": "Rock",
-        "rating": 8.6,
-        "url": "https://pitchfork.com/reviews/albums/moses-sumney-grae/",
+        "artist": "Medhane",
+        "title": "Cold Water",
+        "genre": "Rap",
+        "rating": 8.4,
+        "url": "https://pitchfork.com/reviews/albums/medhane-cold-water/",
         "source": "pitchfork",
-        "sp_date": "2020-05-15T00:00.000Z",
-        "sp_album_id": "35CHoLB0GEwYlOomriifC6",
-        "sp_img": "https://i.scdn.co/image/ab67616d00001e028b40e0ef79069fb9bcc560d9",
-        "sp_artist_id": "5W10uJRsbt9bROJDKoI1Wn",
-        "sp_popularity": 65,
-        "score": 79.933
+        "sp_date": "2020-05-26T00:00.000Z",
+        "sp_album_id": "6u66sAgu3xFfKhQpBr4dSu",
+        "sp_img": "https://i.scdn.co/image/ab67616d00001e02d75e25aa2218c22c9f845af2",
+        "sp_artist_id": "6lTiYE2IL4FUqf0CgGjI5i",
+        "sp_popularity": 50,
+        "score": 76.733
     },
     {
         "artist": "Gunna",
@@ -53,7 +95,7 @@
         "sp_img": "https://i.scdn.co/image/ab67616d00001e02468c4d7cd8dcfc63ff2dfe56",
         "sp_artist_id": "2hlmm7s2ICUX0LVIhVFlZQ",
         "sp_popularity": 92,
-        "score": 79.267
+        "score": 76.6
     },
     {
         "artist": "Polo G",
@@ -67,21 +109,7 @@
         "sp_img": "https://i.scdn.co/image/ab67616d00001e02339f780dfdbc38558ea0761d",
         "sp_artist_id": "6AgTAQt8XS6jRWi4sX7w49",
         "sp_popularity": 87,
-        "score": 78.933
-    },
-    {
-        "artist": "Medhane",
-        "title": "Cold Water",
-        "genre": "Rap",
-        "rating": 8.4,
-        "url": "https://pitchfork.com/reviews/albums/medhane-cold-water/",
-        "source": "pitchfork",
-        "sp_date": "2020-05-26T00:00.000Z",
-        "sp_album_id": "6u66sAgu3xFfKhQpBr4dSu",
-        "sp_img": "https://i.scdn.co/image/ab67616d00001e02d75e25aa2218c22c9f845af2",
-        "sp_artist_id": "6lTiYE2IL4FUqf0CgGjI5i",
-        "sp_popularity": 46,
-        "score": 78.6
+        "score": 76.267
     },
     {
         "artist": "Charli XCX",
@@ -95,21 +123,7 @@
         "sp_img": "https://i.scdn.co/image/ab67616d00001e02664e38c99d077cc52ab48914",
         "sp_artist_id": "25uiPmTg16RbhZWAqwLBy5",
         "sp_popularity": 80,
-        "score": 77.533
-    },
-    {
-        "artist": "Bad Bunny",
-        "title": "LAS QUE NO IBAN A SALIR",
-        "genre": "Rap",
-        "rating": 7.2,
-        "url": "https://pitchfork.com/reviews/albums/bad-bunny-las-que-no-iban-a-salir/",
-        "source": "pitchfork",
-        "sp_date": "2020-05-10T00:00.000Z",
-        "sp_album_id": "4gvQO5mEuhbMSrLIuwXkmz",
-        "sp_img": "https://i.scdn.co/image/ab67616d00001e02ae879683217d488c39600092",
-        "sp_artist_id": "4q3ewBCX7sLwd24euuV69X",
-        "sp_popularity": 99,
-        "score": 76.667
+        "score": 74.867
     },
     {
         "artist": "Jeff Rosenstock",
@@ -122,8 +136,8 @@
         "sp_album_id": "0WryIdPBSezBZ7K9G0OHhl",
         "sp_img": "https://i.scdn.co/image/ab67616d00001e0263a8a36108fe42efb8fca36d",
         "sp_artist_id": "0wNZvrIMNUCs24G0wFg2D6",
-        "sp_popularity": 58,
-        "score": 76.6
+        "sp_popularity": 59,
+        "score": 74.133
     },
     {
         "artist": "Future",
@@ -137,21 +151,49 @@
         "sp_img": "https://i.scdn.co/image/ab67616d00001e02935d8d5369bc55e74a39303e",
         "sp_artist_id": "1RyvyyTE3xzB2ZywiAwp0i",
         "sp_popularity": 93,
-        "score": 76.533
+        "score": 73.867
     },
     {
-        "artist": "Jason Isbell and the 400 Unit",
-        "title": "Reunions",
-        "genre": "Folk/Country",
+        "artist": "Christian Lee Hutson",
+        "title": "Beginners",
+        "genre": "Rock",
         "rating": 7.8,
-        "url": "https://pitchfork.com/reviews/albums/jason-isbell-and-the-400-unit-reunions/",
+        "url": "https://pitchfork.com/reviews/albums/christian-lee-hutson-beginners/",
+        "source": "pitchfork",
+        "sp_date": "2020-05-29T00:00.000Z",
+        "sp_album_id": "5PLt7H7bUEQeKPdWhWf4SY",
+        "sp_img": "https://i.scdn.co/image/ab67616d00001e02c52c2f5a5d67e5c058f1091f",
+        "sp_artist_id": "5B7NeaqVrmXPyF05C9tnZ3",
+        "sp_popularity": 48,
+        "score": 73.733
+    },
+    {
+        "artist": "Deerhoof",
+        "title": "Future Teenage Cave Artists",
+        "genre": "Experimental",
+        "rating": 7.8,
+        "url": "https://pitchfork.com/reviews/albums/deerhoof-future-teenage-cave-artists/",
+        "source": "pitchfork",
+        "sp_date": "2020-05-29T00:00.000Z",
+        "sp_album_id": "4I9skhRTov4hKAxAgoclt3",
+        "sp_img": "https://i.scdn.co/image/ab67616d00001e0281369c19e528fd8fec838a6f",
+        "sp_artist_id": "7AZwAitWq1KcFoIJhRWb6V",
+        "sp_popularity": 47,
+        "score": 73.533
+    },
+    {
+        "artist": "El Alfa",
+        "title": "El Androide",
+        "genre": "Rap",
+        "rating": 7.4,
+        "url": "https://pitchfork.com/reviews/albums/el-alfa-el-androide/",
         "source": "pitchfork",
         "sp_date": "2020-05-15T00:00.000Z",
-        "sp_album_id": "5XIafkwTpyvL7jjLJx1xKz",
-        "sp_img": "https://i.scdn.co/image/ab67616d00001e028fc91786225ca4ee7e868060",
-        "sp_artist_id": "3Lg3FGwBxOGuefqekQzRUf",
-        "sp_popularity": 67,
-        "score": 75.533
+        "sp_album_id": "4v25w5u9JmarAGjE3jcByx",
+        "sp_img": "https://i.scdn.co/image/ab67616d00001e022eda28bc6f0b8c56b69d550d",
+        "sp_artist_id": "2oQX8QiMXOyuqbcZEFsZfm",
+        "sp_popularity": 82,
+        "score": 73.467
     },
     {
         "artist": "Carly Rae Jepsen",
@@ -164,8 +206,8 @@
         "sp_album_id": "7oHKKCXCFIv3J1Yh5F08pu",
         "sp_img": "https://i.scdn.co/image/ab67616d00001e022b6138306d8853d23e0d8ead",
         "sp_artist_id": "6sFIWsNpZYqfjUpaCgueju",
-        "sp_popularity": 77,
-        "score": 74.133
+        "sp_popularity": 78,
+        "score": 71.667
     },
     {
         "artist": "Sleaford Mods",
@@ -179,35 +221,63 @@
         "sp_img": "https://i.scdn.co/image/ab67616d00001e02e2ff1f0d2a2cb8038156209c",
         "sp_artist_id": "0otAqZw8htTsGHfqR491Yh",
         "sp_popularity": 53,
-        "score": 73.933
+        "score": 71.267
     },
     {
-        "artist": "Sheff G",
-        "title": "One and Only",
-        "genre": "Rap",
-        "rating": 7.3,
-        "url": "https://pitchfork.com/reviews/albums/sheff-g-one-and-only/",
+        "artist": "Jaime Wyatt",
+        "title": "Neon Cross",
+        "genre": "Folk/Country",
+        "rating": 7.6,
+        "url": "https://pitchfork.com/reviews/albums/jaime-wyatt-neon-cross/",
         "source": "pitchfork",
-        "sp_date": "2020-05-15T00:00.000Z",
-        "sp_album_id": "6lJqLqRmWGmsw8aLEoSlZ9",
-        "sp_img": "https://i.scdn.co/image/ab67616d00001e025c0006dc4c4df1c04dc16637",
-        "sp_artist_id": "1tG7s7S4sq2eFFW0QZyLbm",
-        "sp_popularity": 71,
-        "score": 73.333
+        "sp_date": "2020-05-29T00:00.000Z",
+        "sp_album_id": "2ENwnvyAD2AzUP2Z46l8bQ",
+        "sp_img": "https://i.scdn.co/image/ab67616d00001e020b4bdfc5964025f767e4b09f",
+        "sp_artist_id": "6QCJlDImUdyqBFXcMvm52U",
+        "sp_popularity": 41,
+        "score": 71.133
     },
     {
-        "artist": "Lil Durk",
-        "title": "Just Cause Y\u2019all Waited 2",
-        "genre": "Rap",
-        "rating": 7.3,
-        "url": "https://pitchfork.com/reviews/albums/lil-durk-just-cause-yall-waited-2/",
+        "artist": "Brigid Mae Power",
+        "title": "Head Above the Water",
+        "genre": "Folk/Country",
+        "rating": 7.8,
+        "url": "https://pitchfork.com/reviews/albums/brigid-mae-power-head-above-the-water/",
         "source": "pitchfork",
-        "sp_date": "2020-05-08T00:00.000Z",
-        "sp_album_id": "7ClxwGfXKhbDYykavKxvNY",
-        "sp_img": "https://i.scdn.co/image/ab67616d00001e02199263165b6ac27f20a05044",
-        "sp_artist_id": "3hcs9uc56yIGFCSy9leWe7",
-        "sp_popularity": 82,
-        "score": 73.2
+        "sp_date": "2020-06-05T00:00.000Z",
+        "sp_album_id": "6ma04X4LKQaCj8FAohLjye",
+        "sp_img": "https://i.scdn.co/image/ab67616d00001e02fbabbc5e312548181660ee5d",
+        "sp_artist_id": "4uBunSqfCPl9OrLhRifPwK",
+        "sp_popularity": 23,
+        "score": 71.067
+    },
+    {
+        "artist": "Owen Pallett",
+        "title": "Island",
+        "genre": "Pop/R&B",
+        "rating": 7.7,
+        "url": "https://pitchfork.com/reviews/albums/owen-pallett-island/",
+        "source": "pitchfork",
+        "sp_date": "2020-05-22T00:00.000Z",
+        "sp_album_id": "07fRYHyHA0ptI3NvxmmCkv",
+        "sp_img": "https://i.scdn.co/image/ab67616d00001e02067df733ad26ab86ea6bd767",
+        "sp_artist_id": "77Rj6PHmQJFb8nbSH62y68",
+        "sp_popularity": 47,
+        "score": 70.6
+    },
+    {
+        "artist": "India Jordan",
+        "title": "For You",
+        "genre": null,
+        "rating": 8.0,
+        "url": "https://pitchfork.com/reviews/albums/india-jordan-for-you/",
+        "source": "pitchfork",
+        "sp_date": "2020-05-20T00:00.000Z",
+        "sp_album_id": "0zshu3jZOhN4ZS5DY8Qkt2",
+        "sp_img": "https://i.scdn.co/image/ab67616d00001e0295703cb5cfb433b05156a45e",
+        "sp_artist_id": "5RMLpCv3ic2KtGnqJ7eMG4",
+        "sp_popularity": 40,
+        "score": 70.333
     },
     {
         "artist": "Woods",
@@ -221,49 +291,21 @@
         "sp_img": "https://i.scdn.co/image/ab67616d00001e02e3ae2832ffd837502e1f5b8e",
         "sp_artist_id": "2sBPVEeMBXKNsZtYaJixnJ",
         "sp_popularity": 51,
-        "score": 72.867
+        "score": 70.2
     },
     {
-        "artist": "India Jordan",
-        "title": "For You",
-        "genre": null,
-        "rating": 8.0,
-        "url": "https://pitchfork.com/reviews/albums/india-jordan-for-you/",
+        "artist": "Baths",
+        "title": "Pop Music / False B\u200b-\u200bSides II",
+        "genre": "Electronic",
+        "rating": 7.0,
+        "url": "https://pitchfork.com/reviews/albums/baths-pop-music-false-b-sides-ii/",
         "source": "pitchfork",
-        "sp_date": "2020-05-20T00:00.000Z",
-        "sp_album_id": "0zshu3jZOhN4ZS5DY8Qkt2",
-        "sp_img": "https://i.scdn.co/image/ab67616d00001e0295703cb5cfb433b05156a45e",
-        "sp_artist_id": "5RMLpCv3ic2KtGnqJ7eMG4",
-        "sp_popularity": 39,
-        "score": 72.8
-    },
-    {
-        "artist": "Little Simz",
-        "title": "Drop 6",
-        "genre": "Rap",
-        "rating": 7.7,
-        "url": "https://pitchfork.com/reviews/albums/little-simz-drop-6-ep/",
-        "source": "pitchfork",
-        "sp_date": "2020-05-06T00:00.000Z",
-        "sp_album_id": "6QrGmXbUtjyekuW83gXBBb",
-        "sp_img": "https://i.scdn.co/image/ab67616d00001e02d0bb66e4667e13d4fdc739d6",
-        "sp_artist_id": "6eXZu6O7nAUA5z6vLV8NKI",
-        "sp_popularity": 63,
-        "score": 71.133
-    },
-    {
-        "artist": "Hayley Williams",
-        "title": "Petals for Armor",
-        "genre": "Pop/R&B",
-        "rating": 7.2,
-        "url": "https://pitchfork.com/reviews/albums/hayley-williams-petals-for-armor/",
-        "source": "pitchfork",
-        "sp_date": "2020-05-08T00:00.000Z",
-        "sp_album_id": "4HXpQ5KQBVWN25ltjnX7xa",
-        "sp_img": "https://i.scdn.co/image/ab67616d00001e02896e2483613a566bcb00d324",
-        "sp_artist_id": "6Rx1JKzBrSzoKQtmbVmBnM",
-        "sp_popularity": 74,
-        "score": 71.0
+        "sp_date": "2020-05-29T00:00.000Z",
+        "sp_album_id": "7CNADHu4cWUHE2b6ESIHCx",
+        "sp_img": "https://i.scdn.co/image/ab67616d00001e02af12accf6b09f0ccb5e58690",
+        "sp_artist_id": "5zS8r5hRRk1jzD41yYS1NO",
+        "sp_popularity": 50,
+        "score": 69.333
     },
     {
         "artist": "The Magnetic Fields",
@@ -277,35 +319,21 @@
         "sp_img": "https://i.scdn.co/image/ab67616d00001e02006aa05b13344b181f5cb817",
         "sp_artist_id": "6RWjTQqILL7a1tQ0VapyLK",
         "sp_popularity": 58,
-        "score": 70.733
+        "score": 68.067
     },
     {
-        "artist": "Ka",
-        "title": "Descendants of Cain",
-        "genre": "Rap",
-        "rating": 8.1,
-        "url": "https://pitchfork.com/reviews/albums/ka-descendants-of-cain/",
+        "artist": "Esther Rose",
+        "title": "My Favorite Mistakes",
+        "genre": "Folk/Country",
+        "rating": 7.4,
+        "url": "https://pitchfork.com/reviews/albums/esther-rose-my-favorite-mistakes/",
         "source": "pitchfork",
-        "sp_date": "2020-05-07T00:00.000Z",
-        "sp_album_id": "0yhyMBfxKhjy1f7TsXXssl",
-        "sp_img": "https://i.scdn.co/image/ab67616d00001e02d403eff090dfe3be01debfc8",
-        "sp_artist_id": "0cmqAB0gdr6ObvjNrQJAQr",
-        "sp_popularity": 46,
-        "score": 70.467
-    },
-    {
-        "artist": "Lil Tjay",
-        "title": "State Of Emergency",
-        "genre": "Rap",
-        "rating": 6.7,
-        "url": "https://pitchfork.com/reviews/albums/lil-tjay-state-of-emergency/",
-        "source": "pitchfork",
-        "sp_date": "2020-05-08T00:00.000Z",
-        "sp_album_id": "26d9EFfi2YSvhQv7KKcrNw",
-        "sp_img": "https://i.scdn.co/image/ab67616d00001e024f221c0104af653803c7572a",
-        "sp_artist_id": "6jGMq4yGs7aQzuGsMgVgZR",
-        "sp_popularity": 86,
-        "score": 70.4
+        "sp_date": "2020-05-29T00:00.000Z",
+        "sp_album_id": "5W1IvLnRJXGM6qlgV0t4GQ",
+        "sp_img": "https://i.scdn.co/image/ab67616d00001e028a3ecdf3b7bbbf7de6895deb",
+        "sp_artist_id": "2oHUiSQkf9M1TELQvNJJPs",
+        "sp_popularity": 31,
+        "score": 67.933
     },
     {
         "artist": "Nation of Language",
@@ -318,8 +346,22 @@
         "sp_album_id": "6ogsolFc2FCmP8ru8fBfgQ",
         "sp_img": "https://i.scdn.co/image/ab67616d00001e0215e2058f8c6f0698a3248c0c",
         "sp_artist_id": "5JWBow4ywgKNQ5HBxY8hcz",
-        "sp_popularity": 40,
-        "score": 70.067
+        "sp_popularity": 42,
+        "score": 67.8
+    },
+    {
+        "artist": "Muzz",
+        "title": "Muzz",
+        "genre": "Rock",
+        "rating": 6.5,
+        "url": "https://pitchfork.com/reviews/albums/muzz-muzz/",
+        "source": "pitchfork",
+        "sp_date": "2020-06-05T00:00.000Z",
+        "sp_album_id": "09xzMkaSBxY5qwcYXIY94i",
+        "sp_img": "https://i.scdn.co/image/ab67616d00001e02c65a62c49b7d4af73d9f22b1",
+        "sp_artist_id": "4nZTcwItN2j9H21sJBZ2Nq",
+        "sp_popularity": 44,
+        "score": 67.467
     },
     {
         "artist": "Katie Von Schleicher",
@@ -332,22 +374,8 @@
         "sp_album_id": "7BFCex0ujA1VHUvkqjqlnb",
         "sp_img": "https://i.scdn.co/image/ab67616d00001e02462c80102094c50e964b662b",
         "sp_artist_id": "68UA9076k6lewTq2slA1FN",
-        "sp_popularity": 38,
-        "score": 69.667
-    },
-    {
-        "artist": "Buscabulla",
-        "title": "Regresa",
-        "genre": "Electronic",
-        "rating": 7.7,
-        "url": "https://pitchfork.com/reviews/albums/buscabulla-regresa/",
-        "source": "pitchfork",
-        "sp_date": "2020-05-08T00:00.000Z",
-        "sp_album_id": "18xOW1VhQWVgnQH9CGi9Rp",
-        "sp_img": "https://i.scdn.co/image/ab67616d00001e02da33cccbf6176c3574fe1bcc",
-        "sp_artist_id": "0MoaBi6dSquXp6rrlqlF8R",
-        "sp_popularity": 52,
-        "score": 69.6
+        "sp_popularity": 39,
+        "score": 67.2
     },
     {
         "artist": "Odunsi (The Engine)",
@@ -361,7 +389,7 @@
         "sp_img": "https://i.scdn.co/image/ab67616d00001e027b37913dd47d2214cc891ba2",
         "sp_artist_id": "3QAWvRmq1TMLuNtDKVyRaW",
         "sp_popularity": 54,
-        "score": 69.267
+        "score": 66.6
     },
     {
         "artist": "Bill Nace",
@@ -371,25 +399,25 @@
         "url": "https://pitchfork.com/reviews/albums/bill-nace-both/",
         "source": "pitchfork",
         "sp_date": "2020-05-22T00:00.000Z",
-        "sp_album_id": "1DqlrWifEx5FCbzevTSgmk",
-        "sp_img": "https://i.scdn.co/image/ab67616d00001e0281774dc9eabaf0c3e5368f96",
+        "sp_album_id": "5qwJsQhMKyzRSpoeGtHaeO",
+        "sp_img": "https://i.scdn.co/image/ab67616d00001e0251052ec2e1db6ffe2706ed3d",
         "sp_artist_id": "6kCCUIp2jp39YUjbqEAmzL",
-        "sp_popularity": 19,
-        "score": 68.867
+        "sp_popularity": 20,
+        "score": 66.4
     },
     {
-        "artist": "Infant Island",
-        "title": "Beneath",
-        "genre": "Metal",
-        "rating": 7.9,
-        "url": "https://pitchfork.com/reviews/albums/infant-island-beneath/",
+        "artist": "Greg Fox",
+        "title": "Contact",
+        "genre": "Experimental",
+        "rating": 7.4,
+        "url": "https://pitchfork.com/reviews/albums/greg-fox-contact/",
         "source": "pitchfork",
-        "sp_date": "2020-05-15T00:00.000Z",
-        "sp_album_id": "5ycE4NDRcP3gvnwltM8uiU",
-        "sp_img": "https://i.scdn.co/image/ab67616d00001e029e961a7ca36e743d028c5ae9",
-        "sp_artist_id": "34ZIRrOiowNWuyJYt5crZM",
-        "sp_popularity": 29,
-        "score": 68.533
+        "sp_date": "2020-05-29T00:00.000Z",
+        "sp_album_id": "0ZBxBvJM0UZ73J81MijWIf",
+        "sp_img": "https://i.scdn.co/image/ab67616d00001e02f20de57c2db88046b8438d1e",
+        "sp_artist_id": "0TtmWFPYtp9OUobudWwIP0",
+        "sp_popularity": 21,
+        "score": 65.933
     },
     {
         "artist": "Nathan Micay",
@@ -402,22 +430,8 @@
         "sp_album_id": "3wAxbMW6FLiCvLdcz29XpK",
         "sp_img": "https://i.scdn.co/image/ab67616d00001e02ad846599e4d1fec37c6d5001",
         "sp_artist_id": "6U7MOIhacysUEnfJ41WfhC",
-        "sp_popularity": 37,
-        "score": 68.333
-    },
-    {
-        "artist": "ARTHUR",
-        "title": "Hair of the Dog",
-        "genre": "Electronic",
-        "rating": 7.4,
-        "url": "https://pitchfork.com/reviews/albums/arthur-hair-of-the-dog/",
-        "source": "pitchfork",
-        "sp_date": "2020-05-15T00:00.000Z",
-        "sp_album_id": "46jao2qqRTgIzkzHuE2wYs",
-        "sp_img": "https://i.scdn.co/image/ab67616d00001e02db59437636f1219033bdc608",
-        "sp_artist_id": "0vIme0FGc4SmFByKiV27tw",
-        "sp_popularity": 43,
-        "score": 68.333
+        "sp_popularity": 38,
+        "score": 65.867
     },
     {
         "artist": "Kamasi Washington",
@@ -430,50 +444,36 @@
         "sp_album_id": "03ZDW1rnnecmoDBmRXt3A1",
         "sp_img": "https://i.scdn.co/image/ab67616d00001e0267c723f87d1adcbe0975f3e3",
         "sp_artist_id": "6HQYnRM4OzToCYPpVBInuU",
-        "sp_popularity": 57,
-        "score": 68.133
+        "sp_popularity": 58,
+        "score": 65.667
     },
     {
-        "artist": "Kaitlyn Aurelia Smith",
-        "title": "The Mosaic of Transformation",
-        "genre": "Experimental",
-        "rating": 7.2,
-        "url": "https://pitchfork.com/reviews/albums/kaitlyn-aurelia-smith-the-mosaic-of-transformation/",
+        "artist": "Infant Island",
+        "title": "Beneath",
+        "genre": "Metal",
+        "rating": 7.9,
+        "url": "https://pitchfork.com/reviews/albums/infant-island-beneath/",
         "source": "pitchfork",
         "sp_date": "2020-05-15T00:00.000Z",
-        "sp_album_id": "1vp1UaO7d7JE4poHbHuBVI",
-        "sp_img": "https://i.scdn.co/image/ab67616d00001e0258d43aea500f1d032b6b1a99",
-        "sp_artist_id": "6P86FLVAK4sxu8OhyQJBvH",
-        "sp_popularity": 47,
-        "score": 67.933
+        "sp_album_id": "5ycE4NDRcP3gvnwltM8uiU",
+        "sp_img": "https://i.scdn.co/image/ab67616d00001e029e961a7ca36e743d028c5ae9",
+        "sp_artist_id": "34ZIRrOiowNWuyJYt5crZM",
+        "sp_popularity": 28,
+        "score": 65.667
     },
     {
-        "artist": "I'm Glad It's You",
-        "title": "Every Sun, Every Moon",
-        "genre": "Rock",
+        "artist": "ARTHUR",
+        "title": "Hair of the Dog",
+        "genre": "Electronic",
         "rating": 7.4,
-        "url": "https://pitchfork.com/reviews/albums/im-glad-its-you-every-sun-every-moon/",
+        "url": "https://pitchfork.com/reviews/albums/arthur-hair-of-the-dog/",
         "source": "pitchfork",
         "sp_date": "2020-05-15T00:00.000Z",
-        "sp_album_id": "6Rg8WjCGyhnEeBG0aQOWzm",
-        "sp_img": "https://i.scdn.co/image/ab67616d00001e0201bed9b671d37b28d985d07d",
-        "sp_artist_id": "3r43FqgJH6TvaSuZWjWuSc",
-        "sp_popularity": 41,
-        "score": 67.933
-    },
-    {
-        "artist": "Jim White",
-        "title": "The Quickening",
-        "genre": "Rock",
-        "rating": 7.8,
-        "url": "https://pitchfork.com/reviews/albums/jim-white-marisa-anderson-the-quickening/",
-        "source": "pitchfork",
-        "sp_date": "2020-05-15T00:00.000Z",
-        "sp_album_id": "5wxtWLeap4Epa3VZPhKOcE",
-        "sp_img": "https://i.scdn.co/image/ab67616d00001e0279c78ec17509ef84f5f441d5",
-        "sp_artist_id": "2e5Czu1HGML44EmIuNsA4o",
-        "sp_popularity": 29,
-        "score": 67.933
+        "sp_album_id": "46jao2qqRTgIzkzHuE2wYs",
+        "sp_img": "https://i.scdn.co/image/ab67616d00001e02db59437636f1219033bdc608",
+        "sp_artist_id": "0vIme0FGc4SmFByKiV27tw",
+        "sp_popularity": 42,
+        "score": 65.467
     },
     {
         "artist": "TALsounds",
@@ -486,36 +486,22 @@
         "sp_album_id": "2RYXBmfMcG5qTh7LjfG2by",
         "sp_img": "https://i.scdn.co/image/ab67616d00001e027f17cd8cde1bee675eb8f35e",
         "sp_artist_id": "3W8UkPK2qxmnwqcBxqf1vL",
-        "sp_popularity": 22,
-        "score": 67.667
+        "sp_popularity": 24,
+        "score": 65.4
     },
     {
-        "artist": "Auscultation",
-        "title": "III",
-        "genre": "Electronic",
-        "rating": 8.0,
-        "url": "https://pitchfork.com/reviews/albums/auscultation-iii/",
+        "artist": "Kaitlyn Aurelia Smith",
+        "title": "The Mosaic of Transformation",
+        "genre": "Experimental",
+        "rating": 7.2,
+        "url": "https://pitchfork.com/reviews/albums/kaitlyn-aurelia-smith-the-mosaic-of-transformation/",
         "source": "pitchfork",
-        "sp_date": "2020-05-08T00:00.000Z",
-        "sp_album_id": "3K3VQ3NSIZl79vMXgiZ3T3",
-        "sp_img": "https://i.scdn.co/image/ab67616d00001e029da258991016a0bd66dec359",
-        "sp_artist_id": "5KlOanD5FKL6qWZ8auNVKQ",
-        "sp_popularity": 32,
-        "score": 67.4
-    },
-    {
-        "artist": "MXXWLL",
-        "title": "Sheeesh",
-        "genre": "Pop/R&B",
-        "rating": 6.7,
-        "url": "https://pitchfork.com/reviews/albums/mxxwll-sheeesh/",
-        "source": "pitchfork",
-        "sp_date": "2020-05-22T00:00.000Z",
-        "sp_album_id": "5wNnktpNWZH4W4BxpB7nN5",
-        "sp_img": "https://i.scdn.co/image/ab67616d00001e02a10ad27909bc54c920b5a9a8",
-        "sp_artist_id": "2KAcGNHkwCFJb7w19oaqmU",
-        "sp_popularity": 47,
-        "score": 67.267
+        "sp_date": "2020-05-15T00:00.000Z",
+        "sp_album_id": "1vp1UaO7d7JE4poHbHuBVI",
+        "sp_img": "https://i.scdn.co/image/ab67616d00001e0258d43aea500f1d032b6b1a99",
+        "sp_artist_id": "6P86FLVAK4sxu8OhyQJBvH",
+        "sp_popularity": 46,
+        "score": 65.067
     },
     {
         "artist": "S\u00e9bastien Tellier",
@@ -528,8 +514,22 @@
         "sp_album_id": "41DhePDG0TWNQrRVKW8z0J",
         "sp_img": "https://i.scdn.co/image/ab67616d00001e023e925fad943baca2d95b4ac8",
         "sp_artist_id": "23ymPLjbtAMzTJS2qRtQ8Z",
-        "sp_popularity": 56,
-        "score": 67.2
+        "sp_popularity": 58,
+        "score": 64.933
+    },
+    {
+        "artist": "MXXWLL",
+        "title": "Sheeesh",
+        "genre": "Pop/R&B",
+        "rating": 6.7,
+        "url": "https://pitchfork.com/reviews/albums/mxxwll-sheeesh/",
+        "source": "pitchfork",
+        "sp_date": "2020-05-22T00:00.000Z",
+        "sp_album_id": "5wNnktpNWZH4W4BxpB7nN5",
+        "sp_img": "https://i.scdn.co/image/ab67616d00001e02a10ad27909bc54c920b5a9a8",
+        "sp_artist_id": "2KAcGNHkwCFJb7w19oaqmU",
+        "sp_popularity": 48,
+        "score": 64.8
     },
     {
         "artist": "Dijon",
@@ -543,7 +543,7 @@
         "sp_img": "https://i.scdn.co/image/ab67616d00001e02d060eda49373a6da42963a5f",
         "sp_artist_id": "0knGpCTbmG4ctl1wzYRZs4",
         "sp_popularity": 64,
-        "score": 67.133
+        "score": 64.467
     },
     {
         "artist": "Aksak Maboul",
@@ -556,36 +556,50 @@
         "sp_album_id": "5HlxzXMXzDV4HaJ6SeAMLc",
         "sp_img": "https://i.scdn.co/image/ab67616d00001e0259ec41aaaa55e892ebfd7cfa",
         "sp_artist_id": "6oYWNIrMewoS8GBkN8f58f",
-        "sp_popularity": 29,
-        "score": 66.667
+        "sp_popularity": 30,
+        "score": 64.2
     },
     {
-        "artist": "Damien Jurado",
-        "title": "What\u2019s New, Tomboy?",
+        "artist": "Bryde",
+        "title": "The Volume of Things",
         "genre": "Rock",
-        "rating": 7.3,
-        "url": "https://pitchfork.com/reviews/albums/damien-jurado-whats-new-tomboy/",
+        "rating": 6.5,
+        "url": "https://pitchfork.com/reviews/albums/bryde-the-volume-of-things/",
         "source": "pitchfork",
-        "sp_date": "2020-05-01T00:00.000Z",
-        "sp_album_id": "0ImURqKkKAYcG9i9atOMSp",
-        "sp_img": "https://i.scdn.co/image/ab67616d00001e023b46173af687b01d50802d64",
-        "sp_artist_id": "79JJCxCCfJ8HufX6w8q2k4",
-        "sp_popularity": 59,
-        "score": 66.267
+        "sp_date": "2020-05-29T00:00.000Z",
+        "sp_album_id": "4v58eA9UbExbltHG5mYhkQ",
+        "sp_img": "https://i.scdn.co/image/ab67616d00001e0223de33c72e88ff2abd03d15f",
+        "sp_artist_id": "0N8tTwUhQQD75uLOyqhfVU",
+        "sp_popularity": 38,
+        "score": 63.933
     },
     {
-        "artist": "Nav",
-        "title": "Good Intentions",
-        "genre": "Rap",
-        "rating": 5.8,
-        "url": "https://pitchfork.com/reviews/albums/nav-good-intentions/",
+        "artist": "Diplo",
+        "title": "Diplo Presents Thomas Wesley Chapter 1: Snake Oil",
+        "genre": "Electronic",
+        "rating": 4.8,
+        "url": "https://pitchfork.com/reviews/albums/diplo-diplo-presents-thomas-wesley-chapter-1-snake-oil/",
         "source": "pitchfork",
-        "sp_date": "2020-05-08T00:00.000Z",
-        "sp_album_id": "0jk3nAmtiIfwLU4CvDDMaS",
-        "sp_img": "https://i.scdn.co/image/ab67616d00001e0236f15d38804d5bdd29b9fc7a",
-        "sp_artist_id": "7rkW85dBwwrJtlHRDkJDAC",
-        "sp_popularity": 86,
-        "score": 65.0
+        "sp_date": "2020-05-29T00:00.000Z",
+        "sp_album_id": "2Om5VEKaBd4Afht33ToQGD",
+        "sp_img": "https://i.scdn.co/image/ab67616d00001e02d79c10cdf4a58309a37d195a",
+        "sp_artist_id": "5fMUXHkw8R8eOP2RNVYEZX",
+        "sp_popularity": 87,
+        "score": 63.533
+    },
+    {
+        "artist": "2nd Grade",
+        "title": "Hit to Hit",
+        "genre": "Rock",
+        "rating": 6.4,
+        "url": "https://pitchfork.com/reviews/albums/2nd-grade-hit-to-hit/",
+        "source": "pitchfork",
+        "sp_date": "2020-05-29T00:00.000Z",
+        "sp_album_id": "2KNLOuDICx4jUFfa9FhZ91",
+        "sp_img": "https://i.scdn.co/image/ab67616d00001e02d8a56d1205629f21ac629087",
+        "sp_artist_id": "6mG7RLvtGBHIg4jdb8urYb",
+        "sp_popularity": 37,
+        "score": 63.133
     },
     {
         "artist": "Retirement Party",
@@ -598,22 +612,8 @@
         "sp_album_id": "0goQL0Rqd3EId9yHHeqyI1",
         "sp_img": "https://i.scdn.co/image/ab67616d00001e024fdf4ac8acd3d49e97edb8a5",
         "sp_artist_id": "6scS2RlUYZHwgNWfMfviOL",
-        "sp_popularity": 41,
-        "score": 64.933
-    },
-    {
-        "artist": "Jess Williamson",
-        "title": "Sorceress",
-        "genre": null,
-        "rating": 7.0,
-        "url": "https://pitchfork.com/reviews/albums/jess-williamson-sorceress/",
-        "source": "pitchfork",
-        "sp_date": "2020-05-15T00:00.000Z",
-        "sp_album_id": "4PFQNELzkJ1AFwb9GsQc26",
-        "sp_img": "https://i.scdn.co/image/ab67616d00001e0200503844fbc86b527f6e133b",
-        "sp_artist_id": "784kOgkd1H6jU4KgPMYHi9",
-        "sp_popularity": 38,
-        "score": 64.933
+        "sp_popularity": 40,
+        "score": 62.067
     },
     {
         "artist": "Moby",
@@ -627,7 +627,7 @@
         "sp_img": "https://i.scdn.co/image/ab67616d00001e02d0ced2393c943af1a99fcfa7",
         "sp_artist_id": "3OsRAKCvk37zwYcnzRf5XF",
         "sp_popularity": 73,
-        "score": 64.733
+        "score": 62.067
     },
     {
         "artist": "N\u00eddia",
@@ -640,64 +640,22 @@
         "sp_album_id": "37k7KzGQIMEnoxD15qq4uL",
         "sp_img": "https://i.scdn.co/image/ab67616d00001e02d10131e5526c4c01d30161e7",
         "sp_artist_id": "3BKX2WA8UjZgTIJ2juyQ7G",
-        "sp_popularity": 28,
-        "score": 63.467
-    },
-    {
-        "artist": "Tall Juan",
-        "title": "Atlantico",
-        "genre": "Rock",
-        "rating": 7.2,
-        "url": "https://pitchfork.com/reviews/albums/tall-juan-atlantico/",
-        "source": "pitchfork",
-        "sp_date": "2020-05-11T00:00.000Z",
-        "sp_album_id": "6expcrUG9E2BXVglwFdIa4",
-        "sp_img": "https://i.scdn.co/image/ab67616d00001e02ea0599149bd702a9b9f82b90",
-        "sp_artist_id": "2G5x56il2fMdpAo2l2J2xB",
         "sp_popularity": 30,
-        "score": 63.2
+        "score": 61.2
     },
     {
-        "artist": "Cafe Racer",
-        "title": "Shadow Talk",
-        "genre": "Rock",
-        "rating": 7.4,
-        "url": "https://pitchfork.com/reviews/albums/cafe-racer-shadow-talk/",
+        "artist": "Methods Body",
+        "title": "Methods Body",
+        "genre": "Experimental",
+        "rating": 7.1,
+        "url": "https://pitchfork.com/reviews/albums/methods-body-methods-body/",
         "source": "pitchfork",
-        "sp_date": "2020-05-08T00:00.000Z",
-        "sp_album_id": "6WwO89y6Dxjn3q9WEZyQ2i",
-        "sp_img": "https://i.scdn.co/image/ab67616d00001e02359e79565f0e9f6d21acfb7e",
-        "sp_artist_id": "6IKrrPvrX4EO519S1nk2W4",
-        "sp_popularity": 28,
-        "score": 63.0
-    },
-    {
-        "artist": "Nick Hakim",
-        "title": "WILL THIS MAKE ME GOOD",
-        "genre": "Rock",
-        "rating": 6.0,
-        "url": "https://pitchfork.com/reviews/albums/nick-hakim-will-this-make-me-good/",
-        "source": "pitchfork",
-        "sp_date": "2020-05-15T00:00.000Z",
-        "sp_album_id": "5wHIOaV0DXf73kL7i5blmM",
-        "sp_img": "https://i.scdn.co/image/ab67616d00001e02a9ff12ef64b31c218c68ceca",
-        "sp_artist_id": "1Goe2NezNnym45kco2xTk6",
-        "sp_popularity": 58,
-        "score": 62.933
-    },
-    {
-        "artist": "Josey Rebelle",
-        "title": "Josey in Space",
-        "genre": "Electronic",
-        "rating": 7.8,
-        "url": "https://pitchfork.com/reviews/albums/josey-rebelle-josey-in-space/",
-        "source": "pitchfork",
-        "sp_date": "2020-05-15T00:00.000Z",
-        "sp_album_id": "6v1Nilz6moJBaC5o3aXzi2",
-        "sp_img": "https://i.scdn.co/image/ab67616d00001e02d6b6546b74979e77bf115cbe",
-        "sp_artist_id": "4M9tKwx3n9pIBszhn1pmkH",
-        "sp_popularity": 4,
-        "score": 62.933
+        "sp_date": "2020-05-22T00:00.000Z",
+        "sp_album_id": "2mOgFhwXotjwxUY8Ht0sV9",
+        "sp_img": "https://i.scdn.co/image/ab67616d00001e02cecc03f4011f403385384755",
+        "sp_artist_id": "5AsHnv4NW9K14WawO8vddw",
+        "sp_popularity": 16,
+        "score": 60.8
     },
     {
         "artist": "Pantayo",
@@ -710,8 +668,22 @@
         "sp_album_id": "5cUX8CjpI5xkWueaZ48xNU",
         "sp_img": "https://i.scdn.co/image/ab67616d00001e02bcd4ff0d1320e865097a4919",
         "sp_artist_id": "2ATrgv09GwvOLKznG3vJUC",
-        "sp_popularity": 20,
-        "score": 62.6
+        "sp_popularity": 24,
+        "score": 60.733
+    },
+    {
+        "artist": "Tall Juan",
+        "title": "Atlantico",
+        "genre": "Rock",
+        "rating": 7.2,
+        "url": "https://pitchfork.com/reviews/albums/tall-juan-atlantico/",
+        "source": "pitchfork",
+        "sp_date": "2020-05-11T00:00.000Z",
+        "sp_album_id": "6expcrUG9E2BXVglwFdIa4",
+        "sp_img": "https://i.scdn.co/image/ab67616d00001e02ea0599149bd702a9b9f82b90",
+        "sp_artist_id": "2G5x56il2fMdpAo2l2J2xB",
+        "sp_popularity": 31,
+        "score": 60.733
     },
     {
         "artist": "Yung Lean",
@@ -725,21 +697,21 @@
         "sp_img": "https://i.scdn.co/image/ab67616d00001e024fbf52b8c98e5c6fbaeb504b",
         "sp_artist_id": "67lytN32YpUxiSeWlKfHJ3",
         "sp_popularity": 70,
-        "score": 62.333
+        "score": 59.667
     },
     {
-        "artist": "Elysia Crampton",
-        "title": "ORCORARA 2010",
-        "genre": "Experimental",
-        "rating": 7.7,
-        "url": "https://pitchfork.com/reviews/albums/elysia-crampton-orcorara-2010/",
+        "artist": "Cavern of Anti-Matter",
+        "title": "In Fabric OST",
+        "genre": "Rock",
+        "rating": 6.8,
+        "url": "https://pitchfork.com/reviews/albums/cavern-of-anti-matter-in-fabric-ost/",
         "source": "pitchfork",
-        "sp_date": "2020-05-01T00:00.000Z",
-        "sp_album_id": "73UrLv10QDG3qA6zwGAxU9",
-        "sp_img": "https://i.scdn.co/image/ab67616d00001e02a7c6dedf13723221894fbd37",
-        "sp_artist_id": "75v4Rn3SqXn6dmq2PFrRgN",
-        "sp_popularity": 25,
-        "score": 61.867
+        "sp_date": "2020-05-12T00:00.000Z",
+        "sp_album_id": "17kJIlUTdZBateK6SysxZ1",
+        "sp_img": "https://i.scdn.co/image/ab67616d00001e02c4c6658ceffc5283b0e1a7ad",
+        "sp_artist_id": "71th4FPdhGaAHVeng0LfRt",
+        "sp_popularity": 35,
+        "score": 59.467
     },
     {
         "artist": "Golden Retriever",
@@ -753,7 +725,7 @@
         "sp_img": "https://i.scdn.co/image/ab67616d00001e02e876f0461ae4d420944769bd",
         "sp_artist_id": "726Y8qhG13nXVntQ85dQ4c",
         "sp_popularity": 21,
-        "score": 61.533
+        "score": 58.867
     },
     {
         "artist": "Wares",
@@ -766,21 +738,7 @@
         "sp_album_id": "2YNi2N3nIZ4K3YhvCVvvSd",
         "sp_img": "https://i.scdn.co/image/ab67616d00001e02e0e478c87b8848e164a79c7f",
         "sp_artist_id": "4IJfEp4CKdYvIGGm6Y8xf6",
-        "sp_popularity": 20,
-        "score": 58.533
-    },
-    {
-        "artist": "Bishop Nehru",
-        "title": "Nehruvia: My Disregarded Thoughts",
-        "genre": "Rap",
-        "rating": 4.4,
-        "url": "https://pitchfork.com/reviews/albums/bishop-nehru-nehruvia-my-disregarded-thoughts/",
-        "source": "pitchfork",
-        "sp_date": "2020-05-08T00:00.000Z",
-        "sp_album_id": "2noJiJ7pCVOIu1yc5BT50a",
-        "sp_img": "https://i.scdn.co/image/ab67616d00001e02019f5a565cede4c998c324a6",
-        "sp_artist_id": "1b5fazYV5ecKkQHKTlwLG8",
-        "sp_popularity": 53,
-        "score": 50.0
+        "sp_popularity": 24,
+        "score": 56.667
     }
 ]

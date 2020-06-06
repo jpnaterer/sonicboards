@@ -25,7 +25,7 @@ import { environment } from 'src/environments/environment';
 export class ReviewComponent implements OnInit {
 
   node_serve_url = '';
-  current_tab = 'pitchfork';
+  current_tab = '';
   date_stamp_str = '';
   genre_flag = false;
   navbarOpen = false;
@@ -57,16 +57,6 @@ export class ReviewComponent implements OnInit {
       this.node_serve_url = "https://sonicboards.com:3000"
     }else{ this.node_serve_url = "http://localhost:3000" }
 
-    /*this.httpClient
-    .post(this.node_serve_url + '/api/reviews', {source: 'pitchfork'})
-    .subscribe((data : Array<Object>)=> { 
-      this.preloadImages(data); this.pitchfork_data = data })
-
-    this.httpClient
-    .post(this.node_serve_url + '/api/reviews', {source: 'allmusic'})
-    .subscribe((data : Array<Object>)=> { 
-      this.preloadImages(data); this.allmusic_data = data })*/
-
     this.httpClient
     .post(this.node_serve_url + '/api/reviews', 
       [{source: 'pitchfork'}, {source: 'allmusic'}])
@@ -74,6 +64,7 @@ export class ReviewComponent implements OnInit {
       this.preloadImages([].concat.apply([], data)); 
       this.pitchfork_data = data[0];
       this.allmusic_data = data[1];
+      this.current_tab = 'pitchfork';
     })
 
     this.httpClient
