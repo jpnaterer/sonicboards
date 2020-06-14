@@ -21,8 +21,9 @@ def get_pitchfork_newreleases():
         # Scrape page for script that contains a "window.App" dict.
         request_results = request_results.find_all('script')
         for request_result in request_results:
-            if(request_result.text[:10] == "window.App"):
-                script_results = json.loads(request_result.text[11:-1])
+            t = request_result.contents[0]
+            if(t[:10] == "window.App"):
+                script_results = json.loads(t[11:-1])
                 script_results = (script_results['context']['dispatcher']
                     ['stores']['ReviewsStore']['items'])
                 break
@@ -73,8 +74,10 @@ def get_pitchfork_scores(album_list):
 # WHERE THE SEARCHING TAKES PLACE ######################################
 
 releases = get_pitchfork_newreleases()
-releases = scrape.get_spotify_albums(releases)
-releases = scrape.get_spotify_artist(releases)
+pitchfork_scraper = scrape.AlbumScraper(releases)
+releases = pitchfork_scraper.exec()
+# releases = scrape.get_spotify_albums(releases)
+# releases = scrape.get_spotify_artist(releases)
 releases = get_pitchfork_scores(releases)
 
 # Sort by treblechef recommendation score.

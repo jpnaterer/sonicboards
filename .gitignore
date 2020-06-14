@@ -4,6 +4,10 @@
 **/.env
 request.rest
 
+# specific backend files under development.
+server/auth_server.js
+server/routes/users.js
+
 # python
 scripts/__pycache__
 scripts/bench

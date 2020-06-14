@@ -84,8 +84,10 @@ def get_allmusic_scores(album_list):
 # WHERE THE SEARCHING TAKES PLACE ######################################
 
 releases = get_allmusic_newreleases()
-releases = scrape.get_spotify_albums(releases)
-releases = scrape.get_spotify_artist(releases)
+allmusic_scraper = scrape.AlbumScraper(releases)
+releases = allmusic_scraper.exec()
+# releases = scrape.get_spotify_albums(releases)
+# releases = scrape.get_spotify_artist(releases)
 releases = get_allmusic_scores(releases)
 
 # Write results to csv and json files.

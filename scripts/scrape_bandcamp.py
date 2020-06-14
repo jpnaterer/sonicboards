@@ -125,8 +125,10 @@ for region_str, location_id in LOCATION_CODES.items():
 
 print('Fetching %d Spotify Results' % len(album_list), end='', flush=True)
 current_time = datetime.now()
-album_list = scrape.get_spotify_albums(album_list)
-album_list = scrape.get_spotify_artist(album_list)
+bandcamp_scraper = scrape.AlbumScraper(album_list)
+album_list = bandcamp_scraper.exec()
+# album_list = scrape.get_spotify_albums(album_list)
+# album_list = scrape.get_spotify_artist(album_list)
 album_list = get_bandcamp_scores(album_list)
 print(", Completed in %ds" % (datetime.now() - current_time).seconds)
 
