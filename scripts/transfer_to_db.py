@@ -1,5 +1,6 @@
 import pymongo
 import json
+import os
 from datetime import datetime
 
 
@@ -47,9 +48,10 @@ def update_scores(collection, source_str):
 
 # Establish connection to mongodb and add json files to collections
 connect = pymongo.MongoClient()
-add_to_collection(connect.sonicboards.canada, 'results/canada.json')
-add_to_collection(connect.sonicboards.reviews, 'results/results_pf.json')
-add_to_collection(connect.sonicboards.reviews, 'results/results_am.json')
+result_loc = os.path.dirname(os.path.realpath(__file__)) + '/results/'
+add_to_collection(connect.sonicboards.canada, result_loc + 'canada.json')
+add_to_collection(connect.sonicboards.reviews, result_loc + 'results_pf.json')
+add_to_collection(connect.sonicboards.reviews, result_loc + 'results_am.json')
 
 # Load full database and update all scores on popularity and recency.
 update_scores(connect.sonicboards.canada, 'bandcamp')

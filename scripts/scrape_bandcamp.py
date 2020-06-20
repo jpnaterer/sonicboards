@@ -2,6 +2,7 @@ import requests
 import json
 import csv
 import time
+import os
 import scrape
 from datetime import datetime
 
@@ -127,13 +128,12 @@ print('Fetching %d Spotify Results' % len(album_list), end='', flush=True)
 current_time = datetime.now()
 bandcamp_scraper = scrape.AlbumScraper(album_list)
 album_list = bandcamp_scraper.exec()
-# album_list = scrape.get_spotify_albums(album_list)
-# album_list = scrape.get_spotify_artist(album_list)
 album_list = get_bandcamp_scores(album_list)
 print(", Completed in %ds" % (datetime.now() - current_time).seconds)
 
 # Write results to csv and json files.
-with open('results/canada.csv', mode='w') as csv_file:
+script_loc = os.path.dirname(os.path.realpath(__file__))
+with open(script_loc + '/results/canada.csv', mode='w') as csv_file:
     fieldnames = ['artist', 'title', 'genre', 'url',
         'region', 'score', 'sp_popularity',
         'sp_date', 'sp_img', 'sp_album_id', 'sp_artist_id']
@@ -142,5 +142,5 @@ with open('results/canada.csv', mode='w') as csv_file:
     csv_writer.writeheader()
     csv_writer.writerows(album_list)
 
-with open('results/canada.json', 'w') as json_file:
+with open(script_loc + '/results/canada.json', 'w') as json_file:
     json.dump(album_list, json_file, indent=4)

@@ -8,6 +8,12 @@ import numpy as np
 from sklearn.feature_extraction import text as sk_text
 import csv
 
+# Examples
+# https://towardsdatascience.com/multi-class-text-classification-with-scikit-learn-12f1e60e0a9f
+# https://stackabuse.com/text-classification-with-python-and-scikit-learn/
+# https://www.toptal.com/machine-learning/nlp-tutorial-text-classification
+# https://www.analyticsvidhya.com/blog/2018/04/a-comprehensive-guide-to-understand-and-implement-text-classification-in-python/
+
 # Get songs that contain lyrics and have no associated language.
 connect = pymongo.MongoClient()
 collection = connect.sonicboards.canada_songs

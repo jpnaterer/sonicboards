@@ -1,6 +1,7 @@
 import requests
 import json
 import csv
+import os
 import scrape
 from datetime import datetime
 from bs4 import BeautifulSoup
@@ -86,12 +87,11 @@ def get_allmusic_scores(album_list):
 releases = get_allmusic_newreleases()
 allmusic_scraper = scrape.AlbumScraper(releases)
 releases = allmusic_scraper.exec()
-# releases = scrape.get_spotify_albums(releases)
-# releases = scrape.get_spotify_artist(releases)
 releases = get_allmusic_scores(releases)
 
 # Write results to csv and json files.
-with open('results/results_am.csv', mode='w') as csv_file:
+script_loc = os.path.dirname(os.path.realpath(__file__))
+with open(script_loc + '/results/results_am.csv', mode='w') as csv_file:
     fieldnames = ['artist', 'title', 'genre', 'rating', 'score',
         'url', 'source', 'sp_popularity', 'sp_date',
         'sp_img', 'sp_album_id', 'sp_artist_id']
@@ -99,5 +99,5 @@ with open('results/results_am.csv', mode='w') as csv_file:
     csv_writer.writeheader()
     csv_writer.writerows(releases)
 
-with open('results/results_am.json', 'w') as json_file:
+with open(script_loc + '/results/results_am.json', 'w') as json_file:
     json.dump(releases, json_file, indent=4)

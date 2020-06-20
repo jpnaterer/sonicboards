@@ -1,6 +1,7 @@
 import requests
 import json
 import csv
+import os
 import scrape
 from datetime import datetime
 from bs4 import BeautifulSoup
@@ -76,15 +77,14 @@ def get_pitchfork_scores(album_list):
 releases = get_pitchfork_newreleases()
 pitchfork_scraper = scrape.AlbumScraper(releases)
 releases = pitchfork_scraper.exec()
-# releases = scrape.get_spotify_albums(releases)
-# releases = scrape.get_spotify_artist(releases)
 releases = get_pitchfork_scores(releases)
 
 # Sort by treblechef recommendation score.
 releases = sorted(releases, key=lambda k: k['score'], reverse=True)
 
 # Write results to csv and json files.
-with open('results/results_pf.csv', mode='w') as csv_file:
+script_loc = os.path.dirname(os.path.realpath(__file__))
+with open(script_loc + '/results/results_pf.csv', mode='w') as csv_file:
     fieldnames = ['artist', 'title', 'genre', 'rating', 'score',
         'url', 'source', 'sp_popularity', 'sp_date',
         'sp_img', 'sp_album_id', 'sp_artist_id']
@@ -92,5 +92,5 @@ with open('results/results_pf.csv', mode='w') as csv_file:
     csv_writer.writeheader()
     csv_writer.writerows(releases)
 
-with open('results/results_pf.json', 'w') as json_file:
+with open(script_loc + '/results/results_pf.json', 'w') as json_file:
     json.dump(releases, json_file, indent=4)
