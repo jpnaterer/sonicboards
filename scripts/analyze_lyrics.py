@@ -16,7 +16,7 @@ from sklearn.feature_extraction import text as sk_text
 # https://www.toptal.com/machine-learning/nlp-tutorial-text-classification
 # https://www.analyticsvidhya.com/blog/2018/04/a-comprehensive-guide-to-understand-and-implement-text-classification-in-python/
 
-stop_words = ['html', 'craig', 'moreau', 'michael', 'hart', 'olive',
+STOP_WORDS = ['html', 'craig', 'moreau', 'michael', 'hart', 'olive',
     'karl', 'olson', 'chorus', 'chords', 'verse', 'solo', 'jesse', 'jan',
     'potter', 'david', 'partridge', 'carolyn', 'ch', 'lyrics', 'kosic',
     'leroux', 'outro', 'crowe', 'allison', 'http', 'selina', 'robbie',
@@ -30,7 +30,7 @@ stop_words = ['html', 'craig', 'moreau', 'michael', 'hart', 'olive',
     'capitalicide', 'reg', 'im', 'shes', 'lisa', 'northern', 'haggard',
     'ii', 'pearce', 'qui', 'hook', 'gary', 'cho', 'socan', 'por', 'te',
     'que', 'dont', 'ain', 'mona']
-stop_words = sk_text.ENGLISH_STOP_WORDS.union(stop_words)
+STOP_WORDS = sk_text.ENGLISH_STOP_WORDS.union(STOP_WORDS)
 
 
 # Make text lowercase, remove words containing numbers, and replace apostrophes
@@ -85,7 +85,7 @@ def get_lyrics():
 
 def get_genre_features(df):
     tfidf = TfidfVectorizer(sublinear_tf=True, min_df=5, norm='l2',
-        ngram_range=(1, 2), stop_words=stop_words)
+        ngram_range=(1, 2), stop_words=STOP_WORDS)
     features = tfidf.fit_transform(df['lyrics']).toarray()
 
     N = 10
@@ -100,27 +100,56 @@ def get_genre_features(df):
         print(" . {}".format('\n . '.join(unigrams[-N:])))
         g_out[g] = unigrams[-N:]
 
-    return g_out
+    with open('results/lyrics_keywords.csv', 'w') as f:
+        dict_writer = csv.writer(f, delimiter=',')
+        dict_writer.writerow(g_out.keys())
+        dict_writer.writerows(zip(*g_out.values()))
 
 
 # https://www.youtube.com/watch?v=xvqsFTUsOmc
 # https://github.com/adashofdata/nlp-in-python-tutorial
 def get_dtm(df):
+    # Join all lyrics based on genres into [single entry] dicts
+    dfc = dict()
+    genres = set([d for d in df.genre])
+    for g in genres:
+        text_list = [l for i, l in enumerate(df.lyrics) if g == df.genre[i]]
+        dfc[g] = [' '.join(text_list)]
+
+    # Convert single entrydict into data frame.
+    dfc = pandas.DataFrame.from_dict(dfc).transpose()
+    dfc.columns = ['transcript']
+    dfc = dfc.sort_index()
+
     # Generate document term matrix with count vectorizer.
-    cv = CountVectorizer(stop_words=stop_words)
-    data_cv = cv.fit_transform(df['lyrics']).toarray()
+    cv = CountVectorizer(stop_words=STOP_WORDS)
+    data_cv = cv.fit_transform(dfc.transcript).toarray()
     data_dtm = pandas.DataFrame(data_cv, columns=cv.get_feature_names())
+    data_dtm.index = dfc.index
+    data_dtm_inv = data_dtm.transpose()
     top_dict = dict()
-    for c in data_dtm.columns:
-        top = data_dtm[c].sort_values(ascending=False).head(30)
+    for c in data_dtm_inv.columns:
+        top = data_dtm_inv[c].sort_values(ascending=False).head(30)
         top_dict[c] = list(zip(top.index, top.values))
-    print(top_dict)
+
+    # Display results for most common words.
+    for g, top_words in top_dict.items():
+        print(g)
+        print(', '.join([word for word, count in top_words[0:14]]))
+        print('---')
+
+    # Pull the top 30 common words for each genre.
+    common_words = []
+    for g in data_dtm_inv.columns:
+        top = [word for (word, count) in top_dict[g]]
+        for t in top:
+            common_words.append(t)
+
+    common_words_col = collections.Counter(common_words).most_common()
+    add_stop_words = [w for w, count in common_words_col if count > 6]
+    print(add_stop_words)
 
 
 df = get_lyrics()
-g_out = get_genre_features(df)
-
-with open('results/lyrics_keywords.csv', 'w') as f:
-    dict_writer = csv.writer(f, delimiter=',')
-    dict_writer.writerow(g_out.keys())
-    dict_writer.writerows(zip(*g_out.values()))
+# get_genre_features(df)
+get_dtm(df)
