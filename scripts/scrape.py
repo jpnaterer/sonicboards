@@ -35,18 +35,22 @@ class AlbumScraper:
             sp_results = sp.search(q, type='album', limit=1)
             sp_results = sp_results['albums']['items']
 
-            # Remove elements from the list that are not found on spotify.
+            # Ignore results that are not found on spotify.
             # Assume the first result is correct?
             if not(sp_results):
                 continue
             sp_resp = sp_results[0]
 
-            # Remove list elements that do not have a precise release date.
+            # Ignore results that do not have a precise release date.
             if sp_resp['release_date_precision'] != 'day':
                 continue
 
-            # Remove elements that are too different from intended search.
-            # A Token based string diff is used between album title and artist.
+            # Ignore results that are short-length releases.
+            if sp_resp['total_tracks'] <= 2:
+                continue
+
+            # Ignore results that are too different from intended search.
+            # A token based string diff is used between album title and artist.
             txt_diff1 = textdistance.jaccard.normalized_distance(
                 album['artist'].lower(), sp_resp['artists'][0]['name'].lower())
             txt_diff2 = textdistance.jaccard.normalized_distance(
@@ -54,7 +58,7 @@ class AlbumScraper:
             if(txt_diff1 + txt_diff2 > 1):
                 continue
 
-            # Get spotify album image
+            # Get spotify album image.
             image_str = None
             for img_obj in sp_resp['images']:
                 if img_obj['height'] == 300:
