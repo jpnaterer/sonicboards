@@ -14,7 +14,7 @@ class AlbumScraper:
     def __init__(self, album_list):
         self.album_list = album_list
 
-    def exec(self):
+    def run(self):
         self.get_spotify_albums()
         self.get_spotify_artist()
         return self.album_list

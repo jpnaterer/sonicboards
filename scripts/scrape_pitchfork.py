@@ -76,7 +76,7 @@ def get_pitchfork_scores(album_list):
 
 releases = get_pitchfork_newreleases()
 pitchfork_scraper = scrape.AlbumScraper(releases)
-releases = pitchfork_scraper.exec()
+releases = pitchfork_scraper.run()
 releases = get_pitchfork_scores(releases)
 
 # Sort by treblechef recommendation score.

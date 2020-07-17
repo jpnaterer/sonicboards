@@ -86,7 +86,7 @@ def get_allmusic_scores(album_list):
 
 releases = get_allmusic_newreleases()
 allmusic_scraper = scrape.AlbumScraper(releases)
-releases = allmusic_scraper.exec()
+releases = allmusic_scraper.run()
 releases = get_allmusic_scores(releases)
 
 # Write results to csv and json files.
