@@ -6,7 +6,7 @@ request.rest
 
 # specific backend files under development.
 server/auth_server.js
-server/routes/users.js
+server/bench
 
 # python
 scripts/__pycache__

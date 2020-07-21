@@ -1,8 +1,8 @@
-const express = require('express')          // requires install
-const bodyParser = require('body-parser')   // requires install
-const https = require('https')              // requires install
+const express = require('express')
+const bodyParser = require('body-parser')
+const https = require('https')
 const fs = require('fs');
-const app = express()                       // requires install
+const app = express()
 
 // pm2 start server.js    pm2 list    pm2 info server
 // configuration required for https connection. switch to true
