@@ -11,4 +11,4 @@ server/bench
 # python
 scripts/__pycache__
 scripts/bench
-
+scripts/results
