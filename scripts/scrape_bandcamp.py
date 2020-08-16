@@ -133,7 +133,7 @@ print(", Completed in %ds" % (datetime.now() - current_time).seconds)
 
 # Write results to csv and json files.
 script_loc = os.path.dirname(os.path.realpath(__file__))
-with open(script_loc + '/results/canada.csv', mode='w') as csv_file:
+with open(script_loc + '/results/canada.csv', mode='w+') as csv_file:
     fieldnames = ['artist', 'title', 'genre', 'url',
         'region', 'score', 'sp_popularity',
         'sp_date', 'sp_img', 'sp_album_id', 'sp_artist_id']
