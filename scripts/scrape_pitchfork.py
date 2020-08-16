@@ -34,6 +34,8 @@ def get_pitchfork_newreleases():
             album_year = (result['tombstone']['albums']
                 [0]['album']['release_year'])
             current_year = datetime.today().year
+            if album_year is None:
+                continue
             if current_year - album_year > 1 or result['tombstone']['bnr']:
                 continue
 
