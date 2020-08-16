@@ -142,5 +142,5 @@ with open(script_loc + '/results/canada.csv', mode='w') as csv_file:
     csv_writer.writeheader()
     csv_writer.writerows(album_list)
 
-with open(script_loc + '/results/canada.json', 'w') as json_file:
+with open(script_loc + '/results/canada.json', 'w+') as json_file:
     json.dump(album_list, json_file, indent=4)

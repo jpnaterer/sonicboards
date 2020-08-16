@@ -99,5 +99,5 @@ with open(script_loc + '/results/results_am.csv', mode='w') as csv_file:
     csv_writer.writeheader()
     csv_writer.writerows(releases)
 
-with open(script_loc + '/results/results_am.json', 'w') as json_file:
+with open(script_loc + '/results/results_am.json', 'w+') as json_file:
     json.dump(releases, json_file, indent=4)
