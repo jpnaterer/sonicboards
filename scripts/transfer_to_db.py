@@ -33,8 +33,8 @@ def update_scores(collection, source_str):
             new_score = d['sp_popularity'] / 100 * 40 + time_score / 60 * 60
         elif source_str == 'allmusic':
             time_score = max(30 - (datetime.now() - date_obj).days, -30)
-            new_score = (d['rating'] / 5) * 35 + \
-                d['sp_popularity'] / 100 * 25 + time_score / 30 * 40
+            new_score = (d['rating'] / 5) * 25 + \
+                d['sp_popularity'] / 100 * 35 + time_score / 30 * 40
         elif source_str == 'pitchfork':
             time_score = max(30 - (datetime.now() - date_obj).days, -30)
             new_score = (d['rating'] / 10) * 35 + \
