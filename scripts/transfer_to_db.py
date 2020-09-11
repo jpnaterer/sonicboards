@@ -37,8 +37,8 @@ def update_scores(collection, source_str):
                 d['sp_popularity'] / 100 * 35 + time_score / 30 * 40
         elif source_str == 'pitchfork':
             time_score = max(30 - (datetime.now() - date_obj).days, -30)
-            new_score = (d['rating'] / 10) * 35 + \
-                d['sp_popularity'] / 100 * 25 + time_score / 30 * 40
+            new_score = (d['rating'] / 10) * 40 + \
+                d['sp_popularity'] / 100 * 20 + time_score / 30 * 40
         new_score = round(max(new_score, 0), 3)
 
         q_search = {'_id': d['_id']}
