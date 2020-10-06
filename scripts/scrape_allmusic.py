@@ -6,15 +6,17 @@ import scrape
 from datetime import datetime
 from bs4 import BeautifulSoup
 
+GENRE_IGNORE_LIST = ['Country', 'Classical']
+
 
 # Scrape the pitchfork reviews page. Search 3 pages ~ 50 results.
 def get_allmusic_newreleases():
-    search_url = "https://www.allmusic.com/newreleases"
-    GENRE_IGNORE_LIST = ['Country', 'Classical']
+    albums = list()
     PAGES_TO_SEARCH = 3
 
     # Get the pages to search through.
-    page = requests.get(search_url, headers={'User-agent': 'Mozilla/5.0'})
+    page = requests.get("https://www.allmusic.com/newreleases",
+        headers={'User-agent': 'Mozilla/5.0'})
     soup = BeautifulSoup(page.content, 'html.parser')
     request_results = soup.find('select', class_='week-filter')
     request_results = request_results.find_all('option')
@@ -24,47 +26,54 @@ def get_allmusic_newreleases():
             search_id_list.append(result.get('value'))
 
     # Search the pages and append to list of album dicts.
-    results = list()
-    for search_id in search_id_list[:PAGES_TO_SEARCH]:
-        search_url = "https://www.allmusic.com/newreleases/%s" % search_id
-        page = requests.get(search_url, headers={'User-agent': 'Mozilla/5.0'})
-        soup = BeautifulSoup(page.content, 'html.parser')
+    search_urls = ["https://www.allmusic.com/newreleases/%s" % i
+        for i in search_id_list[:PAGES_TO_SEARCH]]
+    for search_url in search_urls:
+        albums.extend(scrape_page(search_url))
 
-        request_results = soup.find_all('div', class_='new-release')
+    return albums
 
-        for idx, request_result in enumerate(request_results):
-            meta = request_result.find('div', class_='meta-container')
-            artist = meta.find('div', class_='artist')
-            title = meta.find('div', class_='title')
-            genre = meta.find('div', class_='genres')
-            url = title.find('a')['href']
 
-            artist_str = artist.get_text().replace('\n', '')[:-1]
-            title_str = title.get_text().replace('\n', '')[:-1]
-            stars = len(meta.find_all('img', class_='blue star')) + \
-                0.5 * len(meta.find_all('img', class_='blue half'))
+# Scrape an individual allmusic page.
+def scrape_page(search_url):
+    page = requests.get(search_url, headers={'User-agent': 'Mozilla/5.0'})
+    soup = BeautifulSoup(page.content, 'html.parser')
 
-            # Get primary genre, removing all text after comma.
-            if genre:
-                genre_str = genre.get_text().replace('\n', '')[:-1]
-            if ',' in genre_str:
-                genre_str = genre_str[:genre_str.find(',')]
+    request_results = soup.find_all('div', class_='new-release')
 
-            # Skip albums that meet certain criteria.
-            if any(gen in genre_str for gen in GENRE_IGNORE_LIST):
-                continue
-            if "Various Artists" in artist_str:
-                continue
+    albums = list()
+    for idx, request_result in enumerate(request_results):
+        meta = request_result.find('div', class_='meta-container')
+        artist = meta.find('div', class_='artist')
+        title = meta.find('div', class_='title')
+        genre = meta.find('div', class_='genres')
+        url = title.find('a')['href']
 
-            # Select primary artist for albums with collaborators.
-            if ' / ' in artist_str:
-                artist_str = artist_str[:artist_str.find(' / ')]
+        artist_str = artist.get_text().replace('\n', '')[:-1]
+        title_str = title.get_text().replace('\n', '')[:-1]
+        stars = len(meta.find_all('img', class_='blue star')) + \
+            0.5 * len(meta.find_all('img', class_='blue half'))
 
-            results.append({'artist': artist_str, 'title': title_str,
-                'genre': genre_str, 'rating': stars, 'url': url,
-                'source': 'allmusic'})
+        # Get primary genre, removing all text after comma.
+        if genre:
+            genre_str = genre.get_text().replace('\n', '')[:-1]
+        if ',' in genre_str:
+            genre_str = genre_str[:genre_str.find(',')]
 
-    return results
+        # Skip albums that meet certain criteria.
+        if any(gen in genre_str for gen in GENRE_IGNORE_LIST):
+            continue
+        if "Various Artists" in artist_str:
+            continue
+
+        # Select primary artist for albums with collaborators.
+        if ' / ' in artist_str:
+            artist_str = artist_str[:artist_str.find(' / ')]
+
+        albums.append({'artist': artist_str, 'title': title_str,
+            'genre': genre_str, 'rating': stars, 'url': url,
+            'source': 'allmusic'})
+    return albums
 
 
 # Generate and sort by treblechef recommendation score.
@@ -84,10 +93,10 @@ def get_allmusic_scores(album_list):
 
 # WHERE THE SEARCHING TAKES PLACE ######################################
 
-releases = get_allmusic_newreleases()
-allmusic_scraper = scrape.AlbumScraper(releases)
-releases = allmusic_scraper.run()
-releases = get_allmusic_scores(releases)
+albums = get_allmusic_newreleases()
+allmusic_scraper = scrape.AlbumScraper(albums)
+albums = allmusic_scraper.run()
+albums = get_allmusic_scores(albums)
 
 # Write results to csv and json files.
 script_loc = os.path.dirname(os.path.realpath(__file__))
@@ -97,7 +106,7 @@ with open(script_loc + '/results/results_am.csv', mode='w+') as csv_file:
         'sp_img', 'sp_album_id', 'sp_artist_id']
     csv_writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
     csv_writer.writeheader()
-    csv_writer.writerows(releases)
+    csv_writer.writerows(albums)
 
 with open(script_loc + '/results/results_am.json', 'w+') as json_file:
-    json.dump(releases, json_file, indent=4)
+    json.dump(albums, json_file, indent=4)
